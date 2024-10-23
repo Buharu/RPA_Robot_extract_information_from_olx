@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Audi A6 ' Autoturisme ' OLX.ro",
+  "Type": "Screen",
+  "Id": "3hdfvT6IWEKLLJZA-4OqBw",
+  "Reference": "cq9w3d16RU-YXN0M0hEJJA/3hdfvT6IWEKLLJZA-4OqBw",
+  "ParentRef": "cq9w3d16RU-YXN0M0hEJJA/3sshGo04ukaXDajwLlKDbg",
+  "Created": "2024-10-14T04:08:56.2155626Z",
+  "Updated": "2024-10-14T04:08:56.2155626Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

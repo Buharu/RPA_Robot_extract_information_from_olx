@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="0Io-C6xxAESI2qOjvsqrTA" Reference="cq9w3d16RU-YXN0M0hEJJA/CLY7mS-_GUaWFROEbsSGQA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.olx.ro/d/oferta/audi-a6-c7-matix-s-line-30l-282-cai-IDisK8G.html" CVScreenId="2f194427-3ef2-48ff-914d-57b45a928e1c" CvElementArea="701, 671, 208, 44" CvTextArea="721, 684, 165, 16" CvTextArgument="An de fabricatie: 2015" CvType="Button" DesignTimeRectangle="703, 672, 204, 40" DesignTimeScaleFactor="1.25" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl type='' class='css-1r0si1e' tag='LI' aaname='' /&gt;" Guid="de3c5c81-3096-4258-8ce0-098e98925b28" ScopeSelectorArgument="&lt;html app='chrome.exe' title='AUDI A6 C7 MATIX S LINE 30l 282 cai Beius • OLX.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CVScreenId="2f194427-3ef2-48ff-914d-57b45a928e1c" CvElementArea="558, 672, 136, 43" CvTextArea="580, 684, 90, 16" CvTextArgument="Culoare: Gri" CvType="Button" DesignTimeRectangle="561, 672, 132, 40" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl type='' class='css-1r0si1e' tag='LI' aaname='' check:innerText='Culoare: Gri' /&gt;" Guid="2ecf3f6f-c8e6-4a02-8499-8c3ed3148e3a" SearchSteps="FuzzySelector, CV" />
+          <Target CVScreenId="2f194427-3ef2-48ff-914d-57b45a928e1c" CvElementArea="915, 672, 165, 43" CvTextArea="937, 684, 120, 16" CvTextArgument="Numar de usi: 4" CvType="Button" DesignTimeRectangle="917, 672, 161, 40" ElementType="ListItem" FuzzySelectorArgument="&lt;webctrl type='' class='css-1r0si1e' tag='LI' aaname='' check:innerText='Numar de usi: 4' /&gt;" Guid="dc85dc2e-af99-46f5-9a87-b88ed12f0245" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="a5f19a68caffaae2722ae58b847ea364.png" xmlns="">0Gkl-NwyL10C8G4kzyquGbg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

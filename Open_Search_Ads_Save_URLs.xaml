@@ -1,0 +1,296 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Open_Search_Ads_Save_URLs" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="Open_Search_Ads_Save_URLs_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Open_Search_Ads_Save_URLs" sap:VirtualizedContainerService.HintSize="1076,2670" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence sap:VirtualizedContainerService.HintSize="484,2647" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Chrome Anunturi Gratuite - Peste 4 milioane a" sap:VirtualizedContainerService.HintSize="450,2564" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="df46aa59-f7ba-4e95-8b74-414676113c65" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,2324" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="5" DisplayName="Click 'Auto, moto si ambarcati…'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="df46aa59-f7ba-4e95-8b74-414676113c65" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.olx.ro/" ContentHash="BAzMupuAFE2pY4NM_KNtIg" DesignTimeRectangle="341, 611, 137, 156" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='searchmain-container' tag='A' type='' class='css-1ep67ka' aaname='Auto, moto si ambarcatiuni' check:innerText='Auto, moto si ambarcatiuni' /&gt;" Guid="a6a8dbc3-150b-466f-b998-298ce03186d6" InformativeScreenshot="f0c74cc41643b949a2151b24c4048f24.png" Reference="cq9w3d16RU-YXN0M0hEJJA/GashSAaThU--CBCzeSk4pQ" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Anunturi Gratuite - Peste 4 milioane anunturi - OLX.ro' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="5" DisplayName="Click 'Autoturisme'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="df46aa59-f7ba-4e95-8b74-414676113c65" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.olx.ro/" CVScreenId="d4e4ee13-ffb9-4225-8633-b8ac1c0c55e3" ContentHash="MxRQZdSIR06nQg-JXovmfQ" CvElementArea="366, 480, 19, 22" CvTextArea="389, 484, 76, 12" CvTextArgument="Autoturisme" CvType="ArrowButton" DesignTimeRectangle="368, 481, 296, 18" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Autoturisme' parentid='searchmain-container' tag='A' type='' class='css-f0mzyq' check:innerText='Autoturisme' /&gt;" Guid="3bbda129-86d4-4d15-933b-8c72d0cdfb25" InformativeScreenshot="2bb26be0d677d73d27e519d868ac83c0.png" Reference="cq9w3d16RU-YXN0M0hEJJA/qdbNGgK2OEK1PhFoRtlGCw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Anunturi Gratuite - Peste 4 milioane anunturi - OLX.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Rulaj km'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,286" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="df46aa59-f7ba-4e95-8b74-414676113c65" Text="30000[k(Enter)]" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.olx.ro/auto-masini-moto-ambarcatiuni/autoturisme/" CVScreenId="37603e3e-7d3e-4fe5-9f6a-f01bdc1d5c64" CvElementArea="472, 602, 115, 54" CvType="InputBox" DesignTimeRectangle="475, 605, 110, 50" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-labelledby='range-to-input-label' idx='3' tag='INPUT' type='tel' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-labelledby='range-to-input-label' class='css-3f5a10' tag='INPUT' type='tel' placeholder='până la' aaname='' /&gt;" Guid="85e8c7bb-e18a-467c-897e-8c9a7e599b58" InformativeScreenshot="ad230e9efa6bc09a97d975f3ff992e5f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Autoturisme noi si second-hand - Descopera acum | OLX.ro' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="3">
+                        <uix:Target CVScreenId="37603e3e-7d3e-4fe5-9f6a-f01bdc1d5c64" CvTextArea="356, 583, 29, 16" CvTextArgument="Rulaj" CvType="Text" DesignTimeRectangle="357, 581, 228, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' idx='3' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='css-t3rokz' tag='P' aaname='Rulaj' check:innerText='Rulaj' /&gt;" Guid="6add0e96-6ca9-4796-b998-c722e218463b" SearchSteps="Selector, FuzzySelector, CV" />
+                        <uix:Target CVScreenId="37603e3e-7d3e-4fe5-9f6a-f01bdc1d5c64" CvTextArea="600, 583, 74, 13" CvTextArgument="Combustibil" CvType="Text" DesignTimeRectangle="601, 581, 228, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' idx='4' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='css-t3rokz' tag='P' aaname='Combustibil' check:innerText='Combustibil' /&gt;" Guid="f36b7542-f03c-418c-b154-b93e7d25417f" SearchSteps="Selector, FuzzySelector, CV" />
+                        <uix:Target CVScreenId="37603e3e-7d3e-4fe5-9f6a-f01bdc1d5c64" CvTextArea="355, 681, 50, 13" CvTextArgument="Culoare" CvType="Text" DesignTimeRectangle="357, 679, 228, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' idx='6' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='css-t3rokz' tag='P' aaname='Culoare' check:innerText='Culoare' /&gt;" Guid="49c897db-d306-43fd-8263-bcc1ff81c5c3" SearchSteps="Selector, FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'An de fabricatie'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,286" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="df46aa59-f7ba-4e95-8b74-414676113c65" Text="2010[k(Enter)]" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.olx.ro/auto-masini-moto-ambarcatiuni/autoturisme/" CVScreenId="9f933944-304f-45cd-847f-742e3e6ad67c" CvElementArea="1332, 504, 115, 53" CvType="InputBox" DesignTimeRectangle="1334, 507, 110, 50" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-labelledby='range-from-input-label' idx='2' tag='INPUT' type='tel' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-labelledby='range-from-input-label' class='css-3f5a10' tag='INPUT' type='tel' placeholder='De la' aaname='' /&gt;" Guid="ac422d8a-a6e4-4c10-9212-efdede4d2c3f" InformativeScreenshot="4dbb5ad69d7b062c777b20c786597090.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Autoturisme noi si second-hand - Descopera acum | OLX.ro' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                        <uix:Target CVScreenId="9f933944-304f-45cd-847f-742e3e6ad67c" CvTextArea="1333, 485, 98, 13" CvTextArgument="An de fabricatie" CvType="Text" DesignTimeRectangle="1334, 483, 228, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' idx='2' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='css-t3rokz' tag='P' aaname='An de fabricatie' check:innerText='An de fabricatie' /&gt;" Guid="12882de3-2f78-4581-bef3-db42339a4696" SearchSteps="Selector, FuzzySelector, CV" />
+                        <uix:Target DesignTimeRectangle="1334, 581, 228, 74" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='12' parentid='mainContent' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='css-1y0lxug' parentid='mainContent' tag='DIV' aaname='' check:innerText='Putere' /&gt;" Guid="8226410a-9b2c-4431-b6c3-05ecb172bceb" SearchSteps="Selector, FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'An de fabricatie'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,286" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="df46aa59-f7ba-4e95-8b74-414676113c65" Text="2017[k(Enter)]" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.olx.ro/auto-masini-moto-ambarcatiuni/autoturisme/" CVScreenId="15f8aab8-65f7-4922-91ea-0997c31c1f5c" CvElementArea="1449, 504, 116, 53" CvType="InputBox" DesignTimeRectangle="1452, 507, 110, 50" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl aria-labelledby='range-to-input-label' idx='2' tag='INPUT' type='tel' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-labelledby='range-to-input-label' class='css-3f5a10' tag='INPUT' type='tel' placeholder='până la' aaname='' /&gt;" Guid="32950790-0ee8-4903-8960-1911cb8d00e0" InformativeScreenshot="7ddfbc0a4453bb08b2990d355dcd6418.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Autoturisme noi si second-hand - Descopera acum | OLX.ro' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                        <uix:Target CVScreenId="15f8aab8-65f7-4922-91ea-0997c31c1f5c" CvTextArea="1333, 485, 98, 13" CvTextArgument="An de fabricatie" CvType="Text" DesignTimeRectangle="1334, 483, 228, 18" ElementType="Text" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p' idx='2' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='css-t3rokz' tag='P' aaname='An de fabricatie' check:innerText='An de fabricatie' /&gt;" Guid="cb98ef33-6d52-4747-af0b-bc9fa7f46d7d" SearchSteps="Selector, FuzzySelector, CV" />
+                        <uix:Target DesignTimeRectangle="1334, 581, 228, 74" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='12' parentid='mainContent' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='css-1y0lxug' parentid='mainContent' tag='DIV' aaname='' check:innerText='Putere' /&gt;" Guid="d33cbdf1-904a-44ff-a63f-472e5c6886f9" SearchSteps="Selector, FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Combustibil'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="df46aa59-f7ba-4e95-8b74-414676113c65" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.olx.ro/auto-masini-moto-ambarcatiuni/autoturisme/" CVScreenId="66eba0af-a9f9-4fb2-adca-52482d6eeff3" CvElementArea="598, 602, 235, 54" CvType="InputBox" DesignTimeRectangle="601, 605, 228, 50" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl type='' class='multi-select-head css-1ee1qo5' parentid='mainContent' tag='DIV' aaname='' check:innerText='Vezi toate' /&gt;" Guid="38dcaee8-84f6-4881-b482-51d0378ba678" InformativeScreenshot="fea9d3efca43c64a2e13ac302f5f1c3f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Autoturisme noi si second-hand - Descopera acum | OLX.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CVScreenId="66eba0af-a9f9-4fb2-adca-52482d6eeff3" CvTextArea="600, 583, 74, 13" CvTextArgument="Combustibil" CvType="Text" DesignTimeRectangle="601, 581, 228, 18" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='css-t3rokz' tag='P' aaname='Combustibil' check:innerText='Combustibil' /&gt;" Guid="93350dd2-e60f-48ab-93e9-2c76db59a0a8" SearchSteps="FuzzySelector, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="382,225" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="df46aa59-f7ba-4e95-8b74-414676113c65" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.olx.ro/auto-masini-moto-ambarcatiuni/autoturisme/" DesignTimeRectangle="594, 516, 16, 16" DesignTimeScaleFactor="1.25" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl class='' aaname='' tag='INPUT' type='checkbox' /&gt;" Guid="322b8727-0b72-4e83-8897-0391c919def4" InformativeScreenshot="c3d418db809eb537c2d42115f3fb6291.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Autoturisme noi si second-hand - Descopera acum | OLX.ro' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="594, 509, 206, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='checkbox-unselected css-18tv77n' tag='LABEL' aaname='' check:innerText='Diesel' /&gt;" Guid="659aebda-f79c-47e3-8dc0-90876d073960" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT search'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382,286" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="df46aa59-f7ba-4e95-8b74-414676113c65" Text="Audi A6" Version="V4">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.olx.ro/auto-masini-moto-ambarcatiuni/autoturisme/" CVScreenId="bfd0b986-e073-4e53-a41b-312fe597b5f9" CvTextArea="403, 301, 119, 18" CvTextArgument="Ce anume cauți?" CvType="Text" DesignTimeRectangle="357, 273, 573, 72" DesignTimeScaleFactor="1" ElementType="InputBox" FullSelectorArgument="&lt;webctrl id='search' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='search' tag='INPUT' type='text' class='css-1xh2qt0' placeholder='Ce anume cauți?' aaname='' /&gt;" Guid="a174efc0-2b48-4018-b105-dc80029cff38" InformativeScreenshot="f9cd30571f362cf91238b10b3edfce79.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Autoturisme noi si second-hand - Descopera acum | OLX.ro' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.VerifyOptions>
+                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionTypeIntoOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionTypeIntoOptions.Retry>
+                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
+                  </uix:VerifyExecutionTypeIntoOptions>
+                </uix:NTypeInto.VerifyOptions>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Căutare'" sap:VirtualizedContainerService.HintSize="382,218" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="df46aa59-f7ba-4e95-8b74-414676113c65" Version="V4">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.olx.ro/auto-masini-moto-ambarcatiuni/autoturisme/?currency=EUR&amp;search%5Bfilter_enum_petrol%5D%5B0%5D=diesel&amp;search%5Bfilter_float_year:from%5D=2010&amp;search%5Bfilter_float_year:to%5D=2017&amp;search%5Bfilter_float_rulaj_pana:to%5D=30000" DesignTimeRectangle="1410, 177, 192, 90" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='css-104mdwb' aaname='Căutare' check:innerText='Căutare' /&gt;" Guid="8acbb68f-9877-4699-b780-1ab9f7a5d378" InformativeScreenshot="5888cf329b2c727dc8c6eb425b91a80c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Autoturisme noi si second-hand - Descopera acum | OLX.ro' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                </uix:NClick.Target>
+                <uix:NClick.VerifyOptions>
+                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                    <uix:VerifyExecutionOptions.Retry>
+                      <InArgument x:TypeArguments="x:Boolean" />
+                    </uix:VerifyExecutionOptions.Retry>
+                    <uix:VerifyExecutionOptions.Timeout>
+                      <InArgument x:TypeArguments="x:Double" />
+                    </uix:VerifyExecutionOptions.Timeout>
+                  </uix:VerifyExecutionOptions>
+                </uix:NClick.VerifyOptions>
+              </uix:NClick>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="-8, -8, 1936, 1056" BrowserType="Chrome" ContentHash="2Dcr4RSXSUK5sjS2xoHhiA" IconBase64="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" InformativeScreenshot="9e26bf9455358a4a712ba763c9bdc521.jpg" Reference="cq9w3d16RU-YXN0M0hEJJA/9ZFRG33fpkqfJaJl0DebPg" Selector="&lt;html app='chrome.exe' title='Anunturi Gratuite - Peste 4 milioane anunturi - OLX.ro' /&gt;" Title="Anunturi Gratuite - Peste 4 milioane anunturi - OLX.ro" Url="https://www.olx.ro/" />
+        </uix:NApplicationCard.TargetApp>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

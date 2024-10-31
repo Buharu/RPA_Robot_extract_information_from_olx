@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Click 'Autoturisme'",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "qdbNGgK2OEK1PhFoRtlGCw",
+  "Reference": "cq9w3d16RU-YXN0M0hEJJA/qdbNGgK2OEK1PhFoRtlGCw",
+  "ParentRef": "cq9w3d16RU-YXN0M0hEJJA/9ZFRG33fpkqfJaJl0DebPg",
+  "Created": "2024-10-31T20:02:40.0569048Z",
+  "Updated": "2024-10-31T20:02:40.0569048Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

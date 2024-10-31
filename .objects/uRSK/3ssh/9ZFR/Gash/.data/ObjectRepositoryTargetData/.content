@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="BAzMupuAFE2pY4NM_KNtIg" Reference="cq9w3d16RU-YXN0M0hEJJA/GashSAaThU--CBCzeSk4pQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.olx.ro/" DesignTimeRectangle="341, 611, 137, 156" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='searchmain-container' tag='A' type='' class='css-1ep67ka' aaname='Auto, moto si ambarcatiuni' check:innerText='Auto, moto si ambarcatiuni' /&gt;" Guid="a6a8dbc3-150b-466f-b998-298ce03186d6" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Anunturi Gratuite - Peste 4 milioane anunturi - OLX.ro' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f0c74cc41643b949a2151b24c4048f24.png" xmlns="">0_R2zWgOL90KMPLmck8fsKw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

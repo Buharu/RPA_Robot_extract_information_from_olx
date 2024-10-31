@@ -8,7 +8,9 @@
     "UiPath.Mail.Activities": "[1.23.11]",
     "UiPath.System.Activities": "[24.11.0-preview]",
     "UiPath.Testing.Activities": "[24.10.2-preview]",
-    "UiPath.UIAutomation.Activities": "[24.11.1-preview]"
+    "UiPath.UIAutomation.Activities": "[24.11.1-preview]",
+    "UiPath.UIAutomation.Activities.Design.RecoveryPanel": "[24.12.1-preview]",
+    "UiPath.UIAutomation.Activities.Runtime.Design": "[24.12.1-preview]"
   },
   "webServices": [],
   "entitiesStores": [],

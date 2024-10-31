@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="MxRQZdSIR06nQg-JXovmfQ" Reference="cq9w3d16RU-YXN0M0hEJJA/qdbNGgK2OEK1PhFoRtlGCw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="https://www.olx.ro/" CVScreenId="d4e4ee13-ffb9-4225-8633-b8ac1c0c55e3" CvElementArea="366, 480, 19, 22" CvTextArea="389, 484, 76, 12" CvTextArgument="Autoturisme" CvType="ArrowButton" DesignTimeRectangle="368, 481, 296, 18" DesignTimeScaleFactor="1" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Autoturisme' parentid='searchmain-container' tag='A' type='' class='css-f0mzyq' check:innerText='Autoturisme' /&gt;" Guid="3bbda129-86d4-4d15-933b-8c72d0cdfb25" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Anunturi Gratuite - Peste 4 milioane anunturi - OLX.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="2bb26be0d677d73d27e519d868ac83c0.png" xmlns="">0IKbodUIsgUme2l4w2LaQvg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

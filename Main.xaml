@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uast="clr-namespace:UiPath.Activities.System.Text;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -48,6 +48,8 @@
       <x:String>UiPath.Excel</x:String>
       <x:String>UiPath.Excel.Activities.Business</x:String>
       <x:String>UiPath.Excel.Model</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -110,455 +112,40 @@
       <AssemblyReference>System.Collections</AssemblyReference>
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
       <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="793.6000000000001,1234.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1093,786.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="sd:DataTable" Name="URL_List" />
-      <Variable x:TypeArguments="sd:DataTable" Name="add_list">
-        <Variable.Default>
-          <VisualBasicValue x:TypeArguments="sd:DataTable" ExpressionText="New System.Data.DataTable" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="add_list" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="568,140" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Open_Search_Ads_Save_URLs - Invoke Workflow File (Open_Search_Ads_Save_URLs.xaml)" sap:VirtualizedContainerService.HintSize="416,204" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Open_Search_Ads_Save_URLs.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Open_Each_URL_Save_information - Invoke Workflow File (Open_Each_URL_Save_information.xaml)" sap:VirtualizedContainerService.HintSize="416,204" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Open_Each_URL_Save_information.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="sd:DataTable" x:Key="in_dt_URL_List">[add_list]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
+    </ui:InvokeWorkflowFile>
+    <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Write_In_Excel_All_Data_Extracted - Invoke Workflow File (Write_In_Excel_All_Data_Extracted.xaml)" sap:VirtualizedContainerService.HintSize="416,195" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="Write_In_Excel_All_Data_Extracted.xaml">
+      <ui:InvokeWorkflowFile.Arguments>
+        <InArgument x:TypeArguments="sd:DataTable" x:Key="in_data_extracted">[add_list]</InArgument>
+      </ui:InvokeWorkflowFile.Arguments>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Anunturi Gratuite - Peste 4 milioane anunturi - OLX.ro" sap:VirtualizedContainerService.HintSize="451.2,48" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="df46aa59-f7ba-4e95-8b74-414676113c65" Version="V2">
-        <uix:NApplicationCard.Body>
-          <ActivityAction x:TypeArguments="x:Object">
-            <ActivityAction.Argument>
-              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-            </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,3065.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
-              <sap:WorkflowViewStateService.ViewState>
-                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                </scg:Dictionary>
-              </sap:WorkflowViewStateService.ViewState>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="5" DisplayName="Click 'Auto, moto si ambarcati…'" sap:VirtualizedContainerService.HintSize="382.4,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="df46aa59-f7ba-4e95-8b74-414676113c65" Version="V4">
-                <uix:NClick.Target>
-                  <uix:TargetAnchorable BrowserURL="https://www.olx.ro/" DesignTimeRectangle="295, 802, 148, 195" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='searchmain-container' tag='A' type='' class='css-1ep67ka' aaname='Auto, moto si ambarcatiuni' check:innerText='Auto, moto si ambarcatiuni' /&gt;" Guid="22319e43-2b69-49d8-8f06-dc76c99d3905" InformativeScreenshot="5fdf54d5acbb0a872e2eee1bcce2f648.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Anunturi Gratuite - Peste 4 milioane anunturi - OLX.ro' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
-                </uix:NClick.Target>
-                <uix:NClick.VerifyOptions>
-                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                    <uix:VerifyExecutionOptions.Retry>
-                      <InArgument x:TypeArguments="x:Boolean" />
-                    </uix:VerifyExecutionOptions.Retry>
-                    <uix:VerifyExecutionOptions.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:VerifyExecutionOptions.Timeout>
-                  </uix:VerifyExecutionOptions>
-                </uix:NClick.VerifyOptions>
-              </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DelayBefore="5" DisplayName="Click 'Autoturisme'" sap:VirtualizedContainerService.HintSize="382.4,225.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="df46aa59-f7ba-4e95-8b74-414676113c65" Version="V4">
-                <uix:NClick.Target>
-                  <uix:TargetAnchorable BrowserURL="https://www.olx.ro/" CVScreenId="67dca5c2-27d2-4f56-8866-3f2d3ae63357" CvTextArea="356, 559, 95, 17" CvTextArgument="Autoturisme" CvType="Text" DesignTimeRectangle="358, 556, 92, 23" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl aaname='Autoturisme' parentid='searchmain-container' tag='SPAN' type='' class='' check:innerText='Autoturisme' /&gt;" Guid="13268669-64c0-4f57-ba37-bf6e31b8cf39" InformativeScreenshot="9fc9e8d6285b750242c26d4141ce4464.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Anunturi Gratuite - Peste 4 milioane anunturi - OLX.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive" />
-                </uix:NClick.Target>
-                <uix:NClick.VerifyOptions>
-                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                    <uix:VerifyExecutionOptions.Retry>
-                      <InArgument x:TypeArguments="x:Boolean" />
-                    </uix:VerifyExecutionOptions.Retry>
-                    <uix:VerifyExecutionOptions.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:VerifyExecutionOptions.Timeout>
-                  </uix:VerifyExecutionOptions>
-                </uix:NClick.VerifyOptions>
-              </uix:NClick>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Rulaj km'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="df46aa59-f7ba-4e95-8b74-414676113c65" Text="30000" Version="V4">
-                <uix:NTypeInto.Target>
-                  <uix:TargetAnchorable BrowserURL="https://www.olx.ro/auto-masini-moto-ambarcatiuni/autoturisme/" CVScreenId="78cc2997-da8a-496f-966f-8d66bd0a3342" CvElementArea="437, 907, 122, 66" CvType="InputBox" DesignTimeRectangle="441, 341, 116, 63" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl aria-labelledby='range-to-input-label' class='css-3f5a10' tag='INPUT' type='tel' placeholder='până la' aaname='' /&gt;" Guid="8d33047c-f49d-471e-a166-510f6a50a436" InformativeScreenshot="88839883022ae7ec97b9d4a901e900f3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Autoturisme noi si second-hand - Descopera acum | OLX.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
-                    <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="3">
-                        <uix:Target CVScreenId="78cc2997-da8a-496f-966f-8d66bd0a3342" CvTextArea="315, 884, 64, 18" CvTextArgument="Rulaj km" CvType="Text" DesignTimeRectangle="315, 311, 242, 23" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='css-t3rokz' tag='P' aaname='Rulaj km' check:innerText='Rulaj km' /&gt;" Guid="7061d6d4-ede3-41c3-84da-11a75e388004" SearchSteps="FuzzySelector, CV" />
-                        <uix:Target DesignTimeRectangle="577, 311, 241, 23" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='css-t3rokz' tag='P' aaname='Combustibil' check:innerText='Combustibil' /&gt;" Guid="80706055-77a0-425e-8990-5b3b67576a0f" SearchSteps="FuzzySelector" />
-                        <uix:Target DesignTimeRectangle="315, 434, 242, 23" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='css-t3rokz' tag='P' aaname='Culoare' check:innerText='Culoare' /&gt;" Guid="4a8efae1-d33d-4b1b-b79a-0fd71e46d02e" SearchSteps="FuzzySelector" />
-                      </scg:List>
-                    </uix:TargetAnchorable.Anchors>
-                  </uix:TargetAnchorable>
-                </uix:NTypeInto.Target>
-                <uix:NTypeInto.VerifyOptions>
-                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                    <uix:VerifyExecutionTypeIntoOptions.Retry>
-                      <InArgument x:TypeArguments="x:Boolean" />
-                    </uix:VerifyExecutionTypeIntoOptions.Retry>
-                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                  </uix:VerifyExecutionTypeIntoOptions>
-                </uix:NTypeInto.VerifyOptions>
-              </uix:NTypeInto>
-              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="382.4,246.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V4">
-                <uix:NKeyboardShortcuts.VerifyOptions>
-                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                    <uix:VerifyExecutionOptions.Retry>
-                      <InArgument x:TypeArguments="x:Boolean" />
-                    </uix:VerifyExecutionOptions.Retry>
-                    <uix:VerifyExecutionOptions.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:VerifyExecutionOptions.Timeout>
-                  </uix:VerifyExecutionOptions>
-                </uix:NKeyboardShortcuts.VerifyOptions>
-              </uix:NKeyboardShortcuts>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'An de fabricatie'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" ScopeIdentifier="df46aa59-f7ba-4e95-8b74-414676113c65" Text="2010" Version="V4">
-                <uix:NTypeInto.Target>
-                  <uix:TargetAnchorable BrowserURL="https://www.olx.ro/auto-masini-moto-ambarcatiuni/autoturisme/" DesignTimeRectangle="1360, 219, 116, 62" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl aria-labelledby='range-from-input-label' class='css-3f5a10' tag='INPUT' type='tel' placeholder='De la' aaname='' /&gt;" Guid="fb8265a4-7669-4156-8186-9d2d78ddaab4" InformativeScreenshot="f52f4e8cadaa0c480eca8f15105af8d6.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Autoturisme noi si second-hand - Descopera acum | OLX.ro' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
-                    <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
-                        <uix:Target DesignTimeRectangle="1360, 189, 242, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='css-t3rokz' tag='P' aaname='An de fabricatie ' check:innerText='An de fabricatie' /&gt;" Guid="d889d214-7489-4172-b9ae-0f59bf670264" SearchSteps="FuzzySelector" />
-                        <uix:Target DesignTimeRectangle="1360, 311, 242, 23" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='css-t3rokz' tag='P' aaname='Putere CP' check:innerText='Putere CP' /&gt;" Guid="08303f45-c125-475f-8e17-9ad60308fd5d" SearchSteps="FuzzySelector" />
-                      </scg:List>
-                    </uix:TargetAnchorable.Anchors>
-                  </uix:TargetAnchorable>
-                </uix:NTypeInto.Target>
-                <uix:NTypeInto.VerifyOptions>
-                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                    <uix:VerifyExecutionTypeIntoOptions.Retry>
-                      <InArgument x:TypeArguments="x:Boolean" />
-                    </uix:VerifyExecutionTypeIntoOptions.Retry>
-                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                  </uix:VerifyExecutionTypeIntoOptions>
-                </uix:NTypeInto.VerifyOptions>
-              </uix:NTypeInto>
-              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="382.4,246.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V4">
-                <uix:NKeyboardShortcuts.VerifyOptions>
-                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                    <uix:VerifyExecutionOptions.Retry>
-                      <InArgument x:TypeArguments="x:Boolean" />
-                    </uix:VerifyExecutionOptions.Retry>
-                    <uix:VerifyExecutionOptions.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:VerifyExecutionOptions.Timeout>
-                  </uix:VerifyExecutionOptions>
-                </uix:NKeyboardShortcuts.VerifyOptions>
-              </uix:NKeyboardShortcuts>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'An de fabricatie'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_6" ScopeIdentifier="df46aa59-f7ba-4e95-8b74-414676113c65" Text="2017" Version="V4">
-                <uix:NTypeInto.Target>
-                  <uix:TargetAnchorable BrowserURL="https://www.olx.ro/auto-masini-moto-ambarcatiuni/autoturisme/" DesignTimeRectangle="1486, 219, 116, 62" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl aria-labelledby='range-to-input-label' class='css-3f5a10' tag='INPUT' type='tel' placeholder='până la' aaname='' /&gt;" Guid="b4700bad-5b4e-402f-b9f8-9fffae567394" InformativeScreenshot="78a3f763c201bf3ea9edbe1beef97d6b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Autoturisme noi si second-hand - Descopera acum | OLX.ro' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
-                    <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
-                        <uix:Target DesignTimeRectangle="1360, 189, 242, 22" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='css-t3rokz' tag='P' aaname='An de fabricatie ' check:innerText='An de fabricatie' /&gt;" Guid="8b686631-b082-4bd4-b6b9-76d06c671d34" SearchSteps="FuzzySelector" />
-                        <uix:Target DesignTimeRectangle="1360, 311, 242, 23" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='css-t3rokz' tag='P' aaname='Putere CP' check:innerText='Putere CP' /&gt;" Guid="09da053e-cf4e-4b70-978c-d7e62766ce07" SearchSteps="FuzzySelector" />
-                      </scg:List>
-                    </uix:TargetAnchorable.Anchors>
-                  </uix:TargetAnchorable>
-                </uix:NTypeInto.Target>
-                <uix:NTypeInto.VerifyOptions>
-                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                    <uix:VerifyExecutionTypeIntoOptions.Retry>
-                      <InArgument x:TypeArguments="x:Boolean" />
-                    </uix:VerifyExecutionTypeIntoOptions.Retry>
-                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                  </uix:VerifyExecutionTypeIntoOptions>
-                </uix:NTypeInto.VerifyOptions>
-              </uix:NTypeInto>
-              <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="382.4,246.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V4">
-                <uix:NKeyboardShortcuts.VerifyOptions>
-                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                    <uix:VerifyExecutionOptions.Retry>
-                      <InArgument x:TypeArguments="x:Boolean" />
-                    </uix:VerifyExecutionOptions.Retry>
-                    <uix:VerifyExecutionOptions.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:VerifyExecutionOptions.Timeout>
-                  </uix:VerifyExecutionOptions>
-                </uix:NKeyboardShortcuts.VerifyOptions>
-              </uix:NKeyboardShortcuts>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Combustibil'" sap:VirtualizedContainerService.HintSize="382.4,225.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="df46aa59-f7ba-4e95-8b74-414676113c65" Version="V4">
-                <uix:NClick.Target>
-                  <uix:TargetAnchorable BrowserURL="https://www.olx.ro/auto-masini-moto-ambarcatiuni/autoturisme/" DesignTimeRectangle="778, 358, 30, 30" DesignTimeScaleFactor="1.25" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl type='' class='css-fb37n3' parentid='mainContent' tag='svg' aaname='' /&gt;" Guid="83dd5c9d-797a-4624-93e6-fa7be4cfec1f" InformativeScreenshot="3edaa8e201e49e82477dc2c1c55954b5.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Autoturisme noi si second-hand - Descopera acum | OLX.ro' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
-                    <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                        <uix:Target DesignTimeRectangle="577, 311, 241, 23" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='css-t3rokz' tag='P' aaname='Combustibil' check:innerText='Combustibil' /&gt;" Guid="16356c75-e21c-4269-b3c6-d49cb20e12da" SearchSteps="FuzzySelector" />
-                      </scg:List>
-                    </uix:TargetAnchorable.Anchors>
-                  </uix:TargetAnchorable>
-                </uix:NClick.Target>
-                <uix:NClick.VerifyOptions>
-                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                    <uix:VerifyExecutionOptions.Retry>
-                      <InArgument x:TypeArguments="x:Boolean" />
-                    </uix:VerifyExecutionOptions.Retry>
-                    <uix:VerifyExecutionOptions.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:VerifyExecutionOptions.Timeout>
-                  </uix:VerifyExecutionOptions>
-                </uix:NClick.VerifyOptions>
-              </uix:NClick>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="382.4,225.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="df46aa59-f7ba-4e95-8b74-414676113c65" Version="V4">
-                <uix:NClick.Target>
-                  <uix:TargetAnchorable BrowserURL="https://www.olx.ro/auto-masini-moto-ambarcatiuni/autoturisme/" DesignTimeRectangle="594, 516, 16, 16" DesignTimeScaleFactor="1.25" ElementType="CheckBox" FuzzySelectorArgument="&lt;webctrl class='' aaname='' tag='INPUT' type='checkbox' /&gt;" Guid="322b8727-0b72-4e83-8897-0391c919def4" InformativeScreenshot="c3d418db809eb537c2d42115f3fb6291.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Autoturisme noi si second-hand - Descopera acum | OLX.ro' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
-                    <uix:TargetAnchorable.Anchors>
-                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                        <uix:Target DesignTimeRectangle="594, 509, 206, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='checkbox-unselected css-18tv77n' tag='LABEL' aaname='' check:innerText='Diesel' /&gt;" Guid="659aebda-f79c-47e3-8dc0-90876d073960" SearchSteps="FuzzySelector" />
-                      </scg:List>
-                    </uix:TargetAnchorable.Anchors>
-                  </uix:TargetAnchorable>
-                </uix:NClick.Target>
-                <uix:NClick.VerifyOptions>
-                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                    <uix:VerifyExecutionOptions.Retry>
-                      <InArgument x:TypeArguments="x:Boolean" />
-                    </uix:VerifyExecutionOptions.Retry>
-                    <uix:VerifyExecutionOptions.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:VerifyExecutionOptions.Timeout>
-                  </uix:VerifyExecutionOptions>
-                </uix:NClick.VerifyOptions>
-              </uix:NClick>
-              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'INPUT search'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="382.4,286.4" sap2010:WorkflowViewState.IdRef="NTypeInto_7" ScopeIdentifier="df46aa59-f7ba-4e95-8b74-414676113c65" Text="Audi A6" Version="V4">
-                <uix:NTypeInto.Target>
-                  <uix:TargetAnchorable BrowserURL="https://www.olx.ro/auto-masini-moto-ambarcatiuni/autoturisme/" DesignTimeRectangle="315, 615, 596, 90" DesignTimeScaleFactor="1.25" ElementType="InputBox" FuzzySelectorArgument="&lt;webctrl id='search' tag='INPUT' type='text' class='css-1xh2qt0' placeholder='Ce anume cauți?' aaname='' /&gt;" Guid="07767ecd-e87e-4cc4-b686-7692cc5d540d" InformativeScreenshot="6586508deffb3124dd929db84064160e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Autoturisme noi si second-hand - Descopera acum | OLX.ro' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
-                </uix:NTypeInto.Target>
-                <uix:NTypeInto.VerifyOptions>
-                  <uix:VerifyExecutionTypeIntoOptions DisplayName="{x:Null}" Mode="Appears">
-                    <uix:VerifyExecutionTypeIntoOptions.Retry>
-                      <InArgument x:TypeArguments="x:Boolean" />
-                    </uix:VerifyExecutionTypeIntoOptions.Retry>
-                    <uix:VerifyExecutionTypeIntoOptions.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:VerifyExecutionTypeIntoOptions.Timeout>
-                  </uix:VerifyExecutionTypeIntoOptions>
-                </uix:NTypeInto.VerifyOptions>
-              </uix:NTypeInto>
-              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Căutare'" sap:VirtualizedContainerService.HintSize="382.4,216.8" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="df46aa59-f7ba-4e95-8b74-414676113c65" Version="V4">
-                <uix:NClick.Target>
-                  <uix:TargetAnchorable BrowserURL="https://www.olx.ro/auto-masini-moto-ambarcatiuni/autoturisme/?currency=EUR&amp;search%5Bfilter_enum_petrol%5D%5B0%5D=diesel&amp;search%5Bfilter_float_year:from%5D=2010&amp;search%5Bfilter_float_year:to%5D=2017&amp;search%5Bfilter_float_rulaj_pana:to%5D=30000" DesignTimeRectangle="1410, 177, 192, 90" DesignTimeScaleFactor="1.25" ElementType="Button" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='css-104mdwb' aaname='Căutare' check:innerText='Căutare' /&gt;" Guid="8acbb68f-9877-4699-b780-1ab9f7a5d378" InformativeScreenshot="5888cf329b2c727dc8c6eb425b91a80c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Autoturisme noi si second-hand - Descopera acum | OLX.ro' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
-                </uix:NClick.Target>
-                <uix:NClick.VerifyOptions>
-                  <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                    <uix:VerifyExecutionOptions.Retry>
-                      <InArgument x:TypeArguments="x:Boolean" />
-                    </uix:VerifyExecutionOptions.Retry>
-                    <uix:VerifyExecutionOptions.Timeout>
-                      <InArgument x:TypeArguments="x:Double" />
-                    </uix:VerifyExecutionOptions.Timeout>
-                  </uix:VerifyExecutionOptions>
-                </uix:NClick.VerifyOptions>
-              </uix:NClick>
-            </Sequence>
-          </ActivityAction>
-        </uix:NApplicationCard.Body>
-        <uix:NApplicationCard.TargetApp>
-          <uix:TargetApp Area="-9, -9, 1938, 1048" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="de0e0032556f688a99292993dea7b6a5.jpg" Selector="&lt;html app='chrome.exe' title='Anunturi Gratuite - Peste 4 milioane anunturi - OLX.ro' /&gt;" Title="Anunturi Gratuite - Peste 4 milioane anunturi - OLX.ro" Url="https://www.olx.ro/" />
-        </uix:NApplicationCard.TargetApp>
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </uix:NApplicationCard>
-    </Sequence>
-    <ui:BuildDataTable DataTable="[add_list]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="568,92" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;itemArray&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;name_column&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;price_Column&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;year_column&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;km_column&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;  &lt;TableName&gt;&#xD;&#xA;    &lt;itemArray /&gt;&#xD;&#xA;  &lt;/TableName&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Audi A6 ' Autoturisme ' OLX.ro" sap:VirtualizedContainerService.HintSize="568,273.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="df81c493-a083-42b8-a981-282060bd1b52" Version="V2">
-      <uix:NApplicationCard.Body>
-        <ActivityAction x:TypeArguments="x:Object">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-          </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,24.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[URL_List]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='URL'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='href'&gt;&lt;webctrl tag='div' idx='5' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="516.8,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_3" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="df81c493-a083-42b8-a981-282060bd1b52" Version="V4">
-              <uix:NExtractData.NextLink>
-                <uix:TargetAnchorable BrowserURL="https://www.olx.ro/auto-masini-moto-ambarcatiuni/autoturisme/q-Audi-A6/?currency=EUR&amp;search%5Bfilter_enum_petrol%5D%5B0%5D=diesel&amp;search%5Bfilter_float_year:from%5D=2010&amp;search%5Bfilter_float_year:to%5D=2017&amp;search%5Bfilter_float_rulaj_pana:to%5D=30000" CVScreenId="e6749821-2a67-441e-8e4e-969f99c85a9b" CvElementArea="989, 500, 30, 38" CvType="ArrowButton" DesignTimeRectangle="989, 503, 30, 30" DesignTimeScaleFactor="1.25" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;ul&amp;gt;a&amp;gt;svg' parentid='mainContent' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='mainContent' tag='svg' class='css-pyu9k9' aaname='' /&gt;" Guid="96951728-6426-49ae-9900-7894e3f2b38d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Audi A6 &amp;apos; Autoturisme &amp;apos; OLX.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target CVScreenId="e6749821-2a67-441e-8e4e-969f99c85a9b" CvTextArea="914, 510, 59, 17" CvTextArgument="1 2" CvType="Text" DesignTimeRectangle="295, 458, 1327, 80" FullSelectorArgument="&lt;webctrl tag='SECTION' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SECTION' type='' class='css-j8u5qq' aaname='' check:innerText='1&amp;#xA;2' /&gt;" Guid="1b325087-c7ec-47fd-8443-ef2f75cde4f0" SearchSteps="FuzzySelector, CV" />
-                    </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
-              </uix:NExtractData.NextLink>
-              <uix:NExtractData.Target>
-                <uix:TargetAnchorable BrowserURL="https://www.olx.ro/auto-masini-moto-ambarcatiuni/autoturisme/q-Audi-A6/?currency=EUR&amp;search%5Bfilter_enum_petrol%5D%5B0%5D=diesel&amp;search%5Bfilter_float_year:from%5D=2010&amp;search%5Bfilter_float_year:to%5D=2017&amp;search%5Bfilter_float_rulaj_pana:to%5D=30000" DesignTimeRectangle="315, -703, 1287, 12885" DesignTimeScaleFactor="1.25" ElementType="Container" FullSelectorArgument="&lt;webctrl tag='FORM' /&gt;" Guid="b07bdf30-9f8c-4c2c-bb03-fdacb168d256" InformativeScreenshot="2c51cad5cc4db3ba36ae520fd8210cff.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Audi A6 &amp;apos; Autoturisme &amp;apos; OLX.ro' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
-              </uix:NExtractData.Target>
-            </uix:NExtractData>
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[URL_List]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="516.8,3396.8" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
-              <ui:ForEachRow.Body>
-                <ActivityAction x:TypeArguments="sd:DataRow">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
-                  </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="483.2,3208" sap2010:WorkflowViewState.IdRef="Sequence_5">
-                    <Sequence.Variables>
-                      <Variable x:TypeArguments="x:String" Name="price" />
-                      <Variable x:TypeArguments="x:String" Name="year" />
-                      <Variable x:TypeArguments="x:String" Name="km" />
-                      <Variable x:TypeArguments="x:String" Name="All_caracteristici" />
-                      <Variable x:TypeArguments="x:String" Name="itemArray" />
-                      <Variable x:TypeArguments="x:String" Name="name_column" />
-                      <Variable x:TypeArguments="x:String" Name="price_column" />
-                      <Variable x:TypeArguments="x:String" Name="year_column" />
-                      <Variable x:TypeArguments="x:String" Name="add_name" />
-                      <Variable x:TypeArguments="x:String" Name="km_column" />
-                    </Sequence.Variables>
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <If Condition="[CurrentRow.ItemArray(0).ToString.Contains(&quot;olx&quot;)]" sap:VirtualizedContainerService.HintSize="449.6,3148" sap2010:WorkflowViewState.IdRef="If_2">
-                      <If.Then>
-                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,1616.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="382.4,114.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="[CurrentRow.ItemArray(0).ToString]" Version="V4" />
-                          <uix:NGetText DisplayName="Get Text 'AUDI A6 C7 MATIX S LINE…'" sap:VirtualizedContainerService.HintSize="382.4,189.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="df81c493-a083-42b8-a981-282060bd1b52" TextString="[add_name]" Version="V4">
-                            <uix:NGetText.Target>
-                              <uix:TargetAnchorable BrowserURL="https://www.olx.ro/d/oferta/audi-a6-c7-matix-s-line-30l-282-cai-IDisK8G.html" DesignTimeRectangle="235, 557, 634, 52" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mainContent' tag='H4' type='' class='css-11nsr42' /&gt;" Guid="1b1de750-a044-4e2b-a77c-44e64e88b50a" InformativeScreenshot="eb3ec8e03e0cff1a9d3734c3f756f31b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='AUDI A6 C7 MATIX S LINE 30l 282 cai Beius • OLX.ro' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
-                            </uix:NGetText.Target>
-                          </uix:NGetText>
-                          <uix:NGetText DisplayName="Get Text '16 500 €'" sap:VirtualizedContainerService.HintSize="382.4,189.6" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="df81c493-a083-42b8-a981-282060bd1b52" TextString="[price]" Version="V4">
-                            <uix:NGetText.Target>
-                              <uix:TargetAnchorable BrowserURL="https://www.olx.ro/d/oferta/audi-a6-c7-matix-s-line-30l-282-cai-IDisK8G.html" DesignTimeRectangle="235, 383, 187, 53" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H3' type='' class='css-uhl2ga' /&gt;" Guid="abfcde9c-606e-47a8-ba6f-85ab0859f7b7" InformativeScreenshot="674c80db89879d8e7c471c3a978198e1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='AUDI A6 C7 MATIX S LINE 30l 282 cai Beius • OLX.ro' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
-                            </uix:NGetText.Target>
-                          </uix:NGetText>
-                          <uix:NGetText DisplayName="Get Text 'UL'" sap:VirtualizedContainerService.HintSize="382.4,189.6" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="df81c493-a083-42b8-a981-282060bd1b52" TextString="[All_caracteristici]" Version="V4">
-                            <uix:NGetText.Target>
-                              <uix:TargetAnchorable BrowserURL="https://www.olx.ro/d/oferta/audi-a6-c7-matix-s-line-30l-282-cai-IDisK8G.html" DesignTimeRectangle="235, 401, 938, 258" DesignTimeScaleFactor="1.25" ElementType="List" FuzzySelectorArgument="&lt;webctrl tag='UL' type='' class='css-rn93um' aaname='' /&gt;" Guid="0018525e-b7e8-4f84-b460-b541dc647a09" InformativeScreenshot="65da3236798210893c11eba2d00fee62.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='AUDI A6 C7 MATIX S LINE 30l 282 cai Beius • OLX.ro' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
-                            </uix:NGetText.Target>
-                          </uix:NGetText>
-                          <uast:ExtractText FirstMatch="{x:Null}" Results="{x:Null}" DisplayName="Extract Text" EndingText="Numar de usi:" ExtractBaseURLOnly="False" ExtractOptions="BetweenStrings" sap:VirtualizedContainerService.HintSize="382.4,331.2" sap2010:WorkflowViewState.IdRef="ExtractText_1" IgnoreDuplicates="False" MatchCase="False" Result="[year]" Source="[All_caracteristici]" StartingText="An de fabricatie: " />
-                          <uast:ExtractText FirstMatch="{x:Null}" Results="{x:Null}" DisplayName="Extract Text" EndingText="Culoare: " ExtractBaseURLOnly="False" ExtractOptions="BetweenStrings" sap:VirtualizedContainerService.HintSize="382.4,331.2" sap2010:WorkflowViewState.IdRef="ExtractText_2" IgnoreDuplicates="False" MatchCase="False" Result="[km]" Source="[All_caracteristici]" StartingText="Rulaj: " />
-                          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&#xD;&#xA;&#x9;CurrentRow.ItemArray(0).ToString,&#xD;&#xA;&#x9;add_name,&#xD;&#xA;&#x9;price,&#xD;&#xA;&#x9;year,&#xD;&#xA;&#x9;km&#xD;&#xA;}]" DataTable="[add_list]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="382.4,211.2" sap2010:WorkflowViewState.IdRef="AddDataRow_1" />
-                        </Sequence>
-                      </If.Then>
-                      <If.Else>
-                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,1369.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="382.4,114.4" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" Url="[CurrentRow.ItemArray(0).ToString]" Version="V4" />
-                          <uix:NGetText DisplayName="Get Text 'Audi A6 Avant 3.0 TDI q…'" sap:VirtualizedContainerService.HintSize="382.4,189.6" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="df81c493-a083-42b8-a981-282060bd1b52" TextString="[add_name]" Version="V4">
-                            <uix:NGetText.Target>
-                              <uix:TargetAnchorable BrowserURL="https://www.autovit.ro/autoturisme/anunt/audi-a6-ver-avant-3-0-tdi-quattro-stronic-ID7HrCYT.html" DesignTimeRectangle="1284, 471, 450, 65" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='offer-title big-text e12csvfg2 ooa-1dueukt er34gjf0' /&gt;" Guid="a3f513a7-431a-4e60-b35b-88781c89025b" InformativeScreenshot="fa6d8aca551b3ecf6dc826bfe578a80b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Utilizat Audi A6 2013 - 11 990 EUR, 29 500 km - Autovit.ro' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
-                            </uix:NGetText.Target>
-                          </uix:NGetText>
-                          <uix:NGetText DisplayName="Get Text 'EUR'" sap:VirtualizedContainerService.HintSize="382.4,189.6" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="df81c493-a083-42b8-a981-282060bd1b52" TextString="[price]" Version="V4">
-                            <uix:NGetText.Target>
-                              <uix:TargetAnchorable BrowserURL="https://www.autovit.ro/autoturisme/anunt/audi-a6-ver-avant-3-0-tdi-quattro-stronic-ID7HrCYT.html" CVScreenId="9696be2c-4be8-4730-bce9-6a34f0c6aad4" CvTextArea="1282, 290, 111, 32" CvType="AnyWordGroup" DesignTimeRectangle="1284, 283, 110, 43" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl isleaf='1' parentid='__next' tag='H3' type='' class='offer-price__number evnmei44 ooa-1kdys7g er34gjf0' /&gt;" Guid="aaad108c-f526-4e73-89cc-24b7b0526665" InformativeScreenshot="06e9cf0a628fa19411e78bb0bc72c525.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Utilizat Audi A6 2013 - 11 990 EUR, 29 500 km - Autovit.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
-                                <uix:TargetAnchorable.Anchors>
-                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                    <uix:Target CVScreenId="9696be2c-4be8-4730-bce9-6a34f0c6aad4" CvTextArea="1397, 306, 37, 17" CvTextArgument="EUR" CvType="Text" DesignTimeRectangle="1399, 301, 35, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' parentid='__next' tag='P' class='offer-price__currency evnmei45 ooa-m6bn4u er34gjf0' aaname='EUR' check:innerText='EUR' /&gt;" Guid="24e23458-a24b-4483-8b03-b110b27aca47" SearchSteps="FuzzySelector, CV" />
-                                  </scg:List>
-                                </uix:TargetAnchorable.Anchors>
-                              </uix:TargetAnchorable>
-                            </uix:NGetText.Target>
-                          </uix:NGetText>
-                          <uix:NGetText DisplayName="Get Text 'Anul producției'" sap:VirtualizedContainerService.HintSize="382.4,189.6" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="df81c493-a083-42b8-a981-282060bd1b52" TextString="[year]" Version="V4">
-                            <uix:NGetText.Target>
-                              <uix:TargetAnchorable BrowserURL="https://www.autovit.ro/autoturisme/anunt/audi-a6-ver-avant-3-0-tdi-quattro-stronic-ID7HrCYT.html" CVScreenId="cb206546-e516-4a4e-8933-e263db7e23e9" CvTextArea="711, 581, 45, 17" CvType="AnyWordGroup" DesignTimeRectangle="714, 576, 530, 25" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='eizxi838 ooa-17xeqrd er34gjf0' parentid='__next' tag='P' /&gt;" Guid="0ea13608-a52c-4f76-a171-608b44052441" InformativeScreenshot="d5b62326664846ccd209f8dc73582026.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Utilizat Audi A6 2013 - 11 990 EUR, 29 500 km - Autovit.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
-                                <uix:TargetAnchorable.Anchors>
-                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                    <uix:Target CVScreenId="cb206546-e516-4a4e-8933-e263db7e23e9" CvTextArea="181, 580, 137, 23" CvTextArgument="Anul producției" CvType="Text" DesignTimeRectangle="184, 576, 530, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='eizxi837 ooa-y26jp er34gjf0' parentid='__next' tag='P' aaname='Anul producției' check:innerText='Anul producției' /&gt;" Guid="3c102015-600a-416f-a98f-2a004b9f3b13" SearchSteps="FuzzySelector, CV" />
-                                  </scg:List>
-                                </uix:TargetAnchorable.Anchors>
-                              </uix:TargetAnchorable>
-                            </uix:NGetText.Target>
-                          </uix:NGetText>
-                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Stare și istoric'" sap:VirtualizedContainerService.HintSize="382.4,225.6" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="df81c493-a083-42b8-a981-282060bd1b52" Version="V4">
-                            <uix:NClick.Target>
-                              <uix:TargetAnchorable BrowserURL="https://www.autovit.ro/autoturisme/anunt/audi-a6-ver-avant-3-0-tdi-quattro-stronic-ID7HrCYT.html" CVScreenId="b9613e95-d335-4f70-8293-c3ab07322d59" CvElementArea="1206, 701, 43, 38" CvType="ArrowButton" DesignTimeRectangle="1214, 705, 30, 30" DesignTimeScaleFactor="1.25" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl type='' parentid='content-condition-history-section__toggle' tag='svg' class='ooa-51p4fw' aaname='' /&gt;" Guid="3f0b04a4-8ff2-4a96-ba18-4d8b34c5acfc" InformativeScreenshot="f964e7c04174d2744ae13b5a8d99d2e8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Utilizat Audi A6 2013 - 11 990 EUR, 29 500 km - Autovit.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
-                                <uix:TargetAnchorable.Anchors>
-                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                    <uix:Target CVScreenId="b9613e95-d335-4f70-8293-c3ab07322d59" CvTextArea="232, 710, 144, 21" CvTextArgument="Stare și istoric" CvType="Text" DesignTimeRectangle="234, 705, 141, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='content-condition-history-section__toggle' tag='P' type='' class='eizxi839 ooa-mbq01s er34gjf0' aaname='Stare și istoric' check:innerText='Stare și istoric' /&gt;" Guid="f322cdce-50eb-4314-8f01-33cbebdfdf84" SearchSteps="FuzzySelector, CV" />
-                                  </scg:List>
-                                </uix:TargetAnchorable.Anchors>
-                              </uix:TargetAnchorable>
-                            </uix:NClick.Target>
-                            <uix:NClick.VerifyOptions>
-                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                                <uix:VerifyExecutionOptions.Retry>
-                                  <InArgument x:TypeArguments="x:Boolean" />
-                                </uix:VerifyExecutionOptions.Retry>
-                                <uix:VerifyExecutionOptions.Timeout>
-                                  <InArgument x:TypeArguments="x:Double" />
-                                </uix:VerifyExecutionOptions.Timeout>
-                              </uix:VerifyExecutionOptions>
-                            </uix:NClick.VerifyOptions>
-                          </uix:NClick>
-                          <uix:NGetText DisplayName="Get Text 'Km'" sap:VirtualizedContainerService.HintSize="382.4,189.6" sap2010:WorkflowViewState.IdRef="NGetText_10" ScopeIdentifier="df81c493-a083-42b8-a981-282060bd1b52" TextString="[km]" Version="V4">
-                            <uix:NGetText.Target>
-                              <uix:TargetAnchorable BrowserURL="https://www.autovit.ro/autoturisme/anunt/audi-a6-ver-avant-3-0-tdi-quattro-stronic-ID7HrCYT.html" CVScreenId="0b12ec4f-95bc-4331-b903-4beee11a921e" CvTextArea="711, 846, 93, 18" CvType="AnyWordGroup" DesignTimeRectangle="714, 842, 530, 25" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' parentid='content-condition-history-section__collapse' tag='P' class='eizxi838 ooa-17xeqrd er34gjf0' /&gt;" Guid="fc37eb7c-aca3-416c-92ae-26409ad91cad" InformativeScreenshot="f51b7c7415c8d22e0faccc2a466891cf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Utilizat Audi A6 2013 - 11 990 EUR, 29 500 km - Autovit.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
-                                <uix:TargetAnchorable.Anchors>
-                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
-                                    <uix:Target CVScreenId="0b12ec4f-95bc-4331-b903-4beee11a921e" CvTextArea="182, 847, 28, 17" CvTextArgument="Km" CvType="Text" DesignTimeRectangle="184, 842, 530, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' parentid='content-condition-history-section__collapse' tag='P' class='eizxi837 ooa-y26jp er34gjf0' aaname='Km' check:innerText='Km' /&gt;" Guid="eb7efd1b-16d2-408b-bc40-4ac71e8ac394" SearchSteps="FuzzySelector, CV" />
-                                  </scg:List>
-                                </uix:TargetAnchorable.Anchors>
-                              </uix:TargetAnchorable>
-                            </uix:NGetText.Target>
-                          </uix:NGetText>
-                          <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{&#xA;&#x9;CurrentRow.ItemArray(0).ToString,&#xA;&#x9;add_name,&#xA;&#x9;price,&#xA;&#x9;year,&#xA;&#x9;km&#xA;}]" DataTable="[add_list]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="382.4,211.2" sap2010:WorkflowViewState.IdRef="AddDataRow_2" />
-                        </Sequence>
-                      </If.Else>
-                    </If>
-                  </Sequence>
-                </ActivityAction>
-              </ui:ForEachRow.Body>
-            </ui:ForEachRow>
-          </Sequence>
-        </ActivityAction>
-      </uix:NApplicationCard.Body>
-      <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" ContentHash="Qe7b1-SprEGT_fICckRrkQ" IconBase64="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" InformativeScreenshot="397652d437f2021135d61bc03f2b472d.jpg" Reference="cq9w3d16RU-YXN0M0hEJJA/3hdfvT6IWEKLLJZA-4OqBw" Selector="&lt;html app='chrome.exe' title='Audi A6 &amp;apos; Autoturisme &amp;apos; OLX.ro' /&gt;" Title="Audi A6 ' Autoturisme ' OLX.ro" Url="https://www.olx.ro/auto-masini-moto-ambarcatiuni/autoturisme/q-Audi-A6/?currency=EUR&amp;search%5Bfilter_enum_petrol%5D%5B0%5D=diesel&amp;search%5Bfilter_float_year:from%5D=2010&amp;search%5Bfilter_float_year:to%5D=2017&amp;search%5Bfilter_float_rulaj_pana:to%5D=30000" />
-      </uix:NApplicationCard.TargetApp>
-    </uix:NApplicationCard>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="568,705.6" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
-      <ueab:ExcelProcessScopeX.Body>
-        <ActivityAction x:TypeArguments="ui:IExcelProcess">
-          <ActivityAction.Argument>
-            <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
-          </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="534.4,596" sap2010:WorkflowViewState.IdRef="Sequence_10">
-            <sap:WorkflowViewStateService.ViewState>
-              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-              </scg:Dictionary>
-            </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" SensitivityLabel="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="500.8,536" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" ResizeWindow="None" SensitivityOperation="None" WorkbookPath="data_collected.xlsx">
-              <ueab:ExcelApplicationCard.Body>
-                <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
-                  <ActivityAction.Argument>
-                    <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
-                  </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="467.2,243.2" sap2010:WorkflowViewState.IdRef="Sequence_9">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Data_Collected&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="433.6,183.2" sap2010:WorkflowViewState.IdRef="WriteRangeX_1" IgnoreEmptySource="False" Source="[add_list]" />
-                  </Sequence>
-                </ActivityAction>
-              </ueab:ExcelApplicationCard.Body>
-            </ueab:ExcelApplicationCard>
-          </Sequence>
-        </ActivityAction>
-      </ueab:ExcelProcessScopeX.Body>
-    </ueab:ExcelProcessScopeX>
+    </ui:InvokeWorkflowFile>
   </Sequence>
 </Activity>

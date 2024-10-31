@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chrome Anunturi Gratuite - Peste 4 milioane a",
+  "Type": "Screen",
+  "Id": "9ZFRG33fpkqfJaJl0DebPg",
+  "Reference": "cq9w3d16RU-YXN0M0hEJJA/9ZFRG33fpkqfJaJl0DebPg",
+  "ParentRef": "cq9w3d16RU-YXN0M0hEJJA/3sshGo04ukaXDajwLlKDbg",
+  "Created": "2024-10-31T20:02:39.6509537Z",
+  "Updated": "2024-10-31T20:02:39.6509537Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

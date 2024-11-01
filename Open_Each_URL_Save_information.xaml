@@ -118,37 +118,31 @@
       <AssemblyReference>System.Linq.Async</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Open_Each_URL_Save_information" sap:VirtualizedContainerService.HintSize="1076,5250" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Open_Each_URL_Save_information" sap:VirtualizedContainerService.HintSize="902.4000000000001,10264" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Audi A6 ' Autoturisme ' OLX.ro" sap:VirtualizedContainerService.HintSize="780,5227" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="df81c493-a083-42b8-a981-282060bd1b52" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Chrome Audi A6 ' Autoturisme ' OLX.ro" sap:VirtualizedContainerService.HintSize="840,10240.8" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="df81c493-a083-42b8-a981-282060bd1b52" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="746,4987" sap2010:WorkflowViewState.IdRef="Sequence_55">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="806.4,10000.8" sap2010:WorkflowViewState.IdRef="Sequence_55">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[in_dt_URL_List]" DisplayName="Extract Table Data io_dt_URL_List" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='URL'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='href'&gt;&lt;webctrl tag='div' idx='5' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="712,189" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="df81c493-a083-42b8-a981-282060bd1b52" Version="V4">
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[in_dt_URL_List]" DisplayName="Extract Table Data io_dt_URL_List" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured' AddCvHeader='true' IsScrollEnabled='false'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column0' Name='URL'&gt;&#xA;&#x9;&#x9;&lt;IsValidName&gt;true&lt;/IsValidName&gt;&#xA;&#x9;&#x9;&lt;ValidationErrorMessage /&gt;&#xA;&#x9;&#x9;&lt;IsExtra&gt;false&lt;/IsExtra&gt;&#xA;&#x9;&#x9;&lt;CanExtractSimilar&gt;true&lt;/CanExtractSimilar&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;column exact='1' name='Column0' attr='href'&gt;&lt;webctrl tag='div' idx='5' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="772.8,189.6" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="None" MaximumResults="0" ScopeIdentifier="df81c493-a083-42b8-a981-282060bd1b52" Version="V4">
               <uix:NExtractData.NextLink>
-                <uix:TargetAnchorable BrowserURL="https://www.olx.ro/auto-masini-moto-ambarcatiuni/autoturisme/q-Audi-A6/?currency=EUR&amp;search%5Bfilter_enum_petrol%5D%5B0%5D=diesel&amp;search%5Bfilter_float_year:from%5D=2010&amp;search%5Bfilter_float_year:to%5D=2017&amp;search%5Bfilter_float_rulaj_pana:to%5D=30000" CVScreenId="e6749821-2a67-441e-8e4e-969f99c85a9b" CvElementArea="989, 500, 30, 38" CvType="ArrowButton" DesignTimeRectangle="989, 503, 30, 30" DesignTimeScaleFactor="1.25" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;ul&amp;gt;a&amp;gt;svg' parentid='mainContent' tag='svg' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='mainContent' tag='svg' class='css-pyu9k9' aaname='' /&gt;" Guid="96951728-6426-49ae-9900-7894e3f2b38d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Audi A6 &amp;apos; Autoturisme &amp;apos; OLX.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
-                  <uix:TargetAnchorable.Anchors>
-                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                      <uix:Target CVScreenId="e6749821-2a67-441e-8e4e-969f99c85a9b" CvTextArea="914, 510, 59, 17" CvTextArgument="1 2" CvType="Text" DesignTimeRectangle="295, 458, 1327, 80" FullSelectorArgument="&lt;webctrl tag='SECTION' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SECTION' type='' class='css-j8u5qq' aaname='' check:innerText='1&amp;#xA;2' /&gt;" Guid="1b325087-c7ec-47fd-8443-ef2f75cde4f0" SearchSteps="FuzzySelector, CV" />
-                    </scg:List>
-                  </uix:TargetAnchorable.Anchors>
-                </uix:TargetAnchorable>
+                <uix:TargetAnchorable BrowserURL="https://www.olx.ro/auto-masini-moto-ambarcatiuni/autoturisme/q-Audi-A6/?currency=EUR&amp;search%5Bfilter_enum_petrol%5D%5B0%5D=diesel&amp;search%5Bfilter_float_year:from%5D=2010&amp;search%5Bfilter_float_year:to%5D=2017&amp;search%5Bfilter_float_rulaj_pana:to%5D=30000" CVScreenId="e6749821-2a67-441e-8e4e-969f99c85a9b" CvElementArea="989, 500, 30, 38" CvType="ArrowButton" DesignTimeRectangle="989, 701, 30, 30" DesignTimeScaleFactor="1.25" ElementType="Icon" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;section&amp;gt;div&amp;gt;ul&amp;gt;a&amp;gt;svg' parentid='mainContent' tag='svg' class='css-pyu9k9' parentclass='pagination-list  css-1vdlgt7' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='mainContent' tag='svg' class='css-pyu9k9' parentclass='pagination-list  css-1vdlgt7' aaname='' /&gt;" Guid="96951728-6426-49ae-9900-7894e3f2b38d" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Audi A6 &amp;apos; Autoturisme &amp;apos; OLX.ro' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V4" Visibility="Interactive" WaitForReadyArgument="Complete" />
               </uix:NExtractData.NextLink>
               <uix:NExtractData.Target>
-                <uix:TargetAnchorable BrowserURL="https://www.olx.ro/auto-masini-moto-ambarcatiuni/autoturisme/q-Audi-A6/?currency=EUR&amp;search%5Bfilter_enum_petrol%5D%5B0%5D=diesel&amp;search%5Bfilter_float_year:from%5D=2010&amp;search%5Bfilter_float_year:to%5D=2017&amp;search%5Bfilter_float_rulaj_pana:to%5D=30000" DesignTimeRectangle="315, -703, 1287, 12885" DesignTimeScaleFactor="1.25" ElementType="Container" FullSelectorArgument="&lt;webctrl tag='FORM' /&gt;" Guid="b07bdf30-9f8c-4c2c-bb03-fdacb168d256" InformativeScreenshot="2c51cad5cc4db3ba36ae520fd8210cff.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Audi A6 &amp;apos; Autoturisme &amp;apos; OLX.ro' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
+                <uix:TargetAnchorable BrowserURL="https://www.olx.ro/auto-masini-moto-ambarcatiuni/autoturisme/q-Audi-A6/?currency=EUR&amp;search%5Bfilter_enum_petrol%5D%5B0%5D=diesel&amp;search%5Bfilter_float_rulaj_pana%3Ato%5D=30000&amp;search%5Bfilter_float_year%3Afrom%5D=2010&amp;search%5Bfilter_float_year%3Ato%5D=2017" DesignTimeRectangle="315, -10610, 1287, 11725" DesignTimeScaleFactor="1.25" ElementType="Container" FullSelectorArgument="&lt;webctrl tag='FORM' /&gt;" Guid="8e79b718-d5a7-43ba-abc2-8a42a6772c8a" InformativeScreenshot="2c51cad5cc4db3ba36ae520fd8210cff.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Audi A6 &amp;apos; Autoturisme &amp;apos; OLX.ro' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive" />
               </uix:NExtractData.Target>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -157,17 +151,18 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </uix:NExtractData>
-            <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Name" DataTable="[in_dt_URL_List]" DisplayName="Add Name Column" sap:VirtualizedContainerService.HintSize="712,218" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1" />
-            <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Price" DataTable="[in_dt_URL_List]" DisplayName="Add Price Column" sap:VirtualizedContainerService.HintSize="712,218" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2" />
-            <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Year" DataTable="[in_dt_URL_List]" DisplayName="Add Year Column" sap:VirtualizedContainerService.HintSize="712,218" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_3" />
-            <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Km" DataTable="[in_dt_URL_List]" DisplayName="Add Km Column" sap:VirtualizedContainerService.HintSize="712,218" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_4" />
-            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[in_dt_URL_List]" DisplayName="For Each Row in io_dt_URL_List" sap:VirtualizedContainerService.HintSize="712,3864" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+            <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Name" DataTable="[in_dt_URL_List]" DisplayName="Add Name Column" sap:VirtualizedContainerService.HintSize="772.8,220" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_1" />
+            <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Price" DataTable="[in_dt_URL_List]" DisplayName="Add Price Column" sap:VirtualizedContainerService.HintSize="772.8,220" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_2" />
+            <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Year" DataTable="[in_dt_URL_List]" DisplayName="Add Year Column" sap:VirtualizedContainerService.HintSize="772.8,220" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_3" />
+            <ui:AddDataColumn x:TypeArguments="x:Object" AllowDBNull="{x:Null}" AutoIncrement="{x:Null}" Column="{x:Null}" DefaultValue="{x:Null}" MaxLength="{x:Null}" Unique="{x:Null}" ColumnName="Km" DataTable="[in_dt_URL_List]" DisplayName="Add Km Column" sap:VirtualizedContainerService.HintSize="772.8,220" sap2010:WorkflowViewState.IdRef="AddDataColumn`1_4" />
+            <ui:RemoveDuplicateRows OutputDataTable="{x:Null}" DataTable="[in_dt_URL_List]" DisplayName="Remove Duplicate Rows" sap:VirtualizedContainerService.HintSize="772.8,112.8" sap2010:WorkflowViewState.IdRef="RemoveDuplicateRows_1" />
+            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[in_dt_URL_List]" DisplayName="For Each Row in io_dt_URL_List" sap:VirtualizedContainerService.HintSize="772.8,8756.8" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
               <ui:ForEachRow.Body>
                 <ActivityAction x:TypeArguments="sd:DataRow">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="678,3675" sap2010:WorkflowViewState.IdRef="Sequence_54">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="739.2,8566.4" sap2010:WorkflowViewState.IdRef="Sequence_54">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="x:String" Name="price" />
                       <Variable x:TypeArguments="x:String" Name="year" />
@@ -175,238 +170,263 @@
                       <Variable x:TypeArguments="x:String" Name="All_caracteristici" />
                       <Variable x:TypeArguments="x:String" Name="URL_array" />
                       <Variable x:TypeArguments="x:String" Name="name" />
+                      <Variable x:TypeArguments="x:Double" Name="exchange_rate">
+                        <Variable.Default>
+                          <Literal x:TypeArguments="x:Double" Value="4.95" />
+                        </Variable.Default>
+                      </Variable>
                     </Sequence.Variables>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <If Condition="[in_dt_URL_List.Rows.IndexOf(CurrentRow) = 0]" sap:VirtualizedContainerService.HintSize="644,3615" sap2010:WorkflowViewState.IdRef="If_14">
+                    <If Condition="[CurrentRow.ItemArray(0).ToString.Contains(&quot;olx&quot;)]" DisplayName="If OLX or Autovit" sap:VirtualizedContainerService.HintSize="705.6,8506.4" sap2010:WorkflowViewState.IdRef="If_15">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
                       <If.Then>
-                        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="610,3365" sap2010:WorkflowViewState.IdRef="Sequence_56">
-                          <Sequence.Variables>
-                            <Variable x:TypeArguments="x:Double" Default="4.95" Name="exchange_rate" />
-                          </Sequence.Variables>
+                        <Sequence DisplayName="Then OLX" sap:VirtualizedContainerService.HintSize="604.8,4433.6" sap2010:WorkflowViewState.IdRef="Sequence_58">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <If Condition="[CurrentRow.ItemArray(0).ToString.Contains(&quot;olx&quot;)]" DisplayName="If OLX or Autovit" sap:VirtualizedContainerService.HintSize="576,3305" sap2010:WorkflowViewState.IdRef="If_15">
-                            <If.Then>
-                              <Sequence DisplayName="Then OLX" sap:VirtualizedContainerService.HintSize="542,1370" sap2010:WorkflowViewState.IdRef="Sequence_58">
+                          <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="571.2,56.8" sap2010:WorkflowViewState.IdRef="NGoToUrl_7" Url="[CurrentRow.ItemArray(0).ToString]" Version="V4">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NGoToUrl>
+                          <TryCatch DisplayName="Try Catch Name" sap:VirtualizedContainerService.HintSize="571.2,700.8" sap2010:WorkflowViewState.IdRef="TryCatch_27">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <TryCatch.Try>
+                              <Sequence sap:VirtualizedContainerService.HintSize="500.8,437.6" sap2010:WorkflowViewState.IdRef="Sequence_60">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="508,84" sap2010:WorkflowViewState.IdRef="NGoToUrl_7" Url="[CurrentRow.ItemArray(0).ToString]" Version="V4">
+                                <Sequence sap:VirtualizedContainerService.HintSize="467.2,377.6" sap2010:WorkflowViewState.IdRef="Sequence_67">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'AUDI A6 C7 MATIX S LINE…'" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_21" ScopeIdentifier="df81c493-a083-42b8-a981-282060bd1b52" TextString="[name]" Version="V4">
+                                    <uix:NGetText.Target>
+                                      <uix:TargetAnchorable BrowserURL="https://www.olx.ro/d/oferta/audi-a6-c7-matix-s-line-30l-282-cai-IDisK8G.html" DesignTimeRectangle="235, 557, 634, 52" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mainContent' tag='H4' type='' class='css-11nsr42' /&gt;" Guid="1b1de750-a044-4e2b-a77c-44e64e88b50a" InformativeScreenshot="eb3ec8e03e0cff1a9d3734c3f756f31b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='AUDI A6 C7 MATIX S LINE 30l 282 cai Beius • OLX.ro' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                                    </uix:NGetText.Target>
+                                  </uix:NGetText>
+                                  <Assign DisplayName="Assign name" sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_55">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Object">[CurrentRow(1)]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Object">[name.Trim]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                </Sequence>
+                              </Sequence>
+                            </TryCatch.Try>
+                            <TryCatch.Catches>
+                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="504,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_19">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ActivityAction x:TypeArguments="s:Exception">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                  </ActivityAction.Argument>
+                                  <Assign DisplayName="Assign name" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_49">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Object">[CurrentRow(1)]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Object">[""]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                </ActivityAction>
+                              </Catch>
+                            </TryCatch.Catches>
+                          </TryCatch>
+                          <TryCatch DisplayName="Try Catch Price" sap:VirtualizedContainerService.HintSize="571.2,1079.2" sap2010:WorkflowViewState.IdRef="TryCatch_28">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <TryCatch.Try>
+                              <Sequence sap:VirtualizedContainerService.HintSize="534.4,816" sap2010:WorkflowViewState.IdRef="Sequence_61">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NGetText ContinueOnError="True" DisplayName="Get Text '16 500 €'" sap:VirtualizedContainerService.HintSize="500.8,189.6" sap2010:WorkflowViewState.IdRef="NGetText_22" ScopeIdentifier="df81c493-a083-42b8-a981-282060bd1b52" TextString="[price]" Version="V4">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://www.olx.ro/d/oferta/audi-a6-c7-matix-s-line-30l-282-cai-IDisK8G.html" DesignTimeRectangle="235, 383, 187, 53" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H3' type='' class='css-uhl2ga' /&gt;" Guid="abfcde9c-606e-47a8-ba6f-85ab0859f7b7" InformativeScreenshot="674c80db89879d8e7c471c3a978198e1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='AUDI A6 C7 MATIX S LINE 30l 282 cai Beius • OLX.ro' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                                  </uix:NGetText.Target>
+                                </uix:NGetText>
+                                <If Condition="[price.Contains(&quot;€&quot;)]" DisplayName="Replace euro / lei simbol and spaces" sap:VirtualizedContainerService.HintSize="500.8,566.4" sap2010:WorkflowViewState.IdRef="If_16">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <If.Then>
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="467.2,208.8" sap2010:WorkflowViewState.IdRef="Sequence_68">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Assign sap2010:Annotation.AnnotationText="Replace the simbols and spaces from the value price, convert it in Integer value and calculate the new price by multiplication with exchange_rate" DisplayName="Assign the new price" sap:VirtualizedContainerService.HintSize="433.6,148.8" sap2010:WorkflowViewState.IdRef="Assign_56">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:Object">[CurrentRow(2)]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:Object">[(CInt(price.Replace("€", "").Replace(" ", "")) * exchange_rate).ToString()]</InArgument>
+                                        </Assign.Value>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </Assign>
+                                    </Sequence>
+                                  </If.Then>
+                                  <If.Else>
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="467.2,196" sap2010:WorkflowViewState.IdRef="Sequence_69">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Assign sap2010:Annotation.AnnotationText="Replace simbols and spaces" sap:VirtualizedContainerService.HintSize="433.6,136" sap2010:WorkflowViewState.IdRef="Assign_57">
+                                        <Assign.To>
+                                          <OutArgument x:TypeArguments="x:Object">[CurrentRow(2)]</OutArgument>
+                                        </Assign.To>
+                                        <Assign.Value>
+                                          <InArgument x:TypeArguments="x:Object">[price.Replace("Lei","").Replace("lei", "").Replace(" ", "")]</InArgument>
+                                        </Assign.Value>
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                      </Assign>
+                                    </Sequence>
+                                  </If.Else>
+                                </If>
+                              </Sequence>
+                            </TryCatch.Try>
+                            <TryCatch.Catches>
+                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_20">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ActivityAction x:TypeArguments="s:Exception">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                  </ActivityAction.Argument>
+                                  <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_50">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Object">[CurrentRow(2)]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Object">[""]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                </ActivityAction>
+                              </Catch>
+                            </TryCatch.Catches>
+                          </TryCatch>
+                          <TryCatch DisplayName="Try Catch Year and Kilometers" sap:VirtualizedContainerService.HintSize="571.2,2536.8" sap2010:WorkflowViewState.IdRef="TryCatch_29">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <TryCatch.Try>
+                              <Sequence DisplayName="Sequence Extract Year and Km, insert to URL_List" sap:VirtualizedContainerService.HintSize="483.2,2282.4" sap2010:WorkflowViewState.IdRef="Sequence_62">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NGetText ContinueOnError="True" DisplayName="Get Text Characteristics List" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="NGetText_23" ScopeIdentifier="df81c493-a083-42b8-a981-282060bd1b52" TextString="[All_caracteristici]" Version="V4">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://www.olx.ro/d/oferta/audi-a6-c7-matix-s-line-30l-282-cai-IDisK8G.html" DesignTimeRectangle="235, 401, 938, 258" DesignTimeScaleFactor="1.25" ElementType="List" FuzzySelectorArgument="&lt;webctrl tag='UL' type='' class='css-rn93um' aaname='' /&gt;" Guid="0018525e-b7e8-4f84-b460-b541dc647a09" InformativeScreenshot="65da3236798210893c11eba2d00fee62.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='AUDI A6 C7 MATIX S LINE 30l 282 cai Beius • OLX.ro' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                                  </uix:NGetText.Target>
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                </uix:NGoToUrl>
-                                <TryCatch DisplayName="Try Catch Name" sap:VirtualizedContainerService.HintSize="508,346" sap2010:WorkflowViewState.IdRef="TryCatch_27">
+                                </uix:NGetText>
+                                <uast:ExtractText FirstMatch="{x:Null}" Results="{x:Null}" DisplayName="Extract Year" EndingText="Numar de usi:" ExtractBaseURLOnly="False" ExtractOptions="BetweenStrings" sap:VirtualizedContainerService.HintSize="449.6,331.2" sap2010:WorkflowViewState.IdRef="ExtractText_1" IgnoreDuplicates="False" MatchCase="False" Result="[year]" Source="[All_caracteristici]" StartingText="An de fabricatie: ">
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <TryCatch.Try>
-                                    <Sequence sap:VirtualizedContainerService.HintSize="502,437" sap2010:WorkflowViewState.IdRef="Sequence_60">
+                                </uast:ExtractText>
+                                <If Condition="[String.IsNullOrEmpty(price)]" sap:VirtualizedContainerService.HintSize="449.6,642.4" sap2010:WorkflowViewState.IdRef="If_18">
+                                  <If.Then>
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,89.6" sap2010:WorkflowViewState.IdRef="Sequence_73">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <Sequence sap:VirtualizedContainerService.HintSize="468,377" sap2010:WorkflowViewState.IdRef="Sequence_67">
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                        <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'AUDI A6 C7 MATIX S LINE…'" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NGetText_21" ScopeIdentifier="df81c493-a083-42b8-a981-282060bd1b52" TextString="[name]" Version="V4">
-                                          <uix:NGetText.Target>
-                                            <uix:TargetAnchorable BrowserURL="https://www.olx.ro/d/oferta/audi-a6-c7-matix-s-line-30l-282-cai-IDisK8G.html" DesignTimeRectangle="235, 557, 634, 52" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='mainContent' tag='H4' type='' class='css-11nsr42' /&gt;" Guid="1b1de750-a044-4e2b-a77c-44e64e88b50a" InformativeScreenshot="eb3ec8e03e0cff1a9d3734c3f756f31b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='AUDI A6 C7 MATIX S LINE 30l 282 cai Beius • OLX.ro' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
-                                          </uix:NGetText.Target>
-                                        </uix:NGetText>
-                                        <Assign DisplayName="Assign name" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_55">
-                                          <Assign.To>
-                                            <OutArgument x:TypeArguments="x:Object">[CurrentRow(1)]</OutArgument>
-                                          </Assign.To>
-                                          <Assign.Value>
-                                            <InArgument x:TypeArguments="x:Object">[name.Trim]</InArgument>
-                                          </Assign.Value>
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                        </Assign>
-                                      </Sequence>
                                     </Sequence>
-                                  </TryCatch.Try>
-                                  <TryCatch.Catches>
-                                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="440,152" sap2010:WorkflowViewState.IdRef="Catch`1_19">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                      <ActivityAction x:TypeArguments="s:Exception">
-                                        <ActivityAction.Argument>
-                                          <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                                        </ActivityAction.Argument>
-                                        <Assign DisplayName="Assign name" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_49">
-                                          <Assign.To>
-                                            <OutArgument x:TypeArguments="x:Object">[CurrentRow(1)]</OutArgument>
-                                          </Assign.To>
-                                          <Assign.Value>
-                                            <InArgument x:TypeArguments="x:Object">[""]</InArgument>
-                                          </Assign.Value>
-                                        </Assign>
-                                      </ActivityAction>
-                                    </Catch>
-                                  </TryCatch.Catches>
-                                </TryCatch>
-                                <TryCatch DisplayName="Try Catch Price" sap:VirtualizedContainerService.HintSize="508,346" sap2010:WorkflowViewState.IdRef="TryCatch_28">
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                  <TryCatch.Try>
-                                    <Sequence sap:VirtualizedContainerService.HintSize="536,813" sap2010:WorkflowViewState.IdRef="Sequence_61">
+                                  </If.Then>
+                                  <If.Else>
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,382.4" sap2010:WorkflowViewState.IdRef="Sequence_74">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <uix:NGetText ContinueOnError="True" DisplayName="Get Text '16 500 €'" sap:VirtualizedContainerService.HintSize="502,189" sap2010:WorkflowViewState.IdRef="NGetText_22" ScopeIdentifier="df81c493-a083-42b8-a981-282060bd1b52" TextString="[price]" Version="V4">
-                                        <uix:NGetText.Target>
-                                          <uix:TargetAnchorable BrowserURL="https://www.olx.ro/d/oferta/audi-a6-c7-matix-s-line-30l-282-cai-IDisK8G.html" DesignTimeRectangle="235, 383, 187, 53" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H3' type='' class='css-uhl2ga' /&gt;" Guid="abfcde9c-606e-47a8-ba6f-85ab0859f7b7" InformativeScreenshot="674c80db89879d8e7c471c3a978198e1.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='AUDI A6 C7 MATIX S LINE 30l 282 cai Beius • OLX.ro' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
-                                        </uix:NGetText.Target>
-                                      </uix:NGetText>
-                                      <If Condition="[price.Contains(&quot;€&quot;)]" DisplayName="Replace euro / lei simbol and spaces" sap:VirtualizedContainerService.HintSize="502,564" sap2010:WorkflowViewState.IdRef="If_16">
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                        <If.Then>
-                                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,207" sap2010:WorkflowViewState.IdRef="Sequence_68">
-                                            <sap:WorkflowViewStateService.ViewState>
-                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                              </scg:Dictionary>
-                                            </sap:WorkflowViewStateService.ViewState>
-                                            <Assign sap2010:Annotation.AnnotationText="Replace the simbols and spaces from the value price, convert it in Integer value and calculate the new price by multiplication with exchange_rate" DisplayName="Assign the new price" sap:VirtualizedContainerService.HintSize="434,147" sap2010:WorkflowViewState.IdRef="Assign_56">
-                                              <Assign.To>
-                                                <OutArgument x:TypeArguments="x:Object">[CurrentRow(2)]</OutArgument>
-                                              </Assign.To>
-                                              <Assign.Value>
-                                                <InArgument x:TypeArguments="x:Object">[(CInt(price.Replace("€", "").Replace(" ", "")) * exchange_rate).ToString()]</InArgument>
-                                              </Assign.Value>
-                                              <sap:WorkflowViewStateService.ViewState>
-                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                                </scg:Dictionary>
-                                              </sap:WorkflowViewStateService.ViewState>
-                                            </Assign>
-                                          </Sequence>
-                                        </If.Then>
-                                        <If.Else>
-                                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,196" sap2010:WorkflowViewState.IdRef="Sequence_69">
-                                            <sap:WorkflowViewStateService.ViewState>
-                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                              </scg:Dictionary>
-                                            </sap:WorkflowViewStateService.ViewState>
-                                            <Assign sap2010:Annotation.AnnotationText="Replace simbols and spaces" sap:VirtualizedContainerService.HintSize="434,136" sap2010:WorkflowViewState.IdRef="Assign_57">
-                                              <Assign.To>
-                                                <OutArgument x:TypeArguments="x:Object">[CurrentRow(2)]</OutArgument>
-                                              </Assign.To>
-                                              <Assign.Value>
-                                                <InArgument x:TypeArguments="x:Object">[price.Replace("Lei","").Replace("lei", "").Replace(" ", "")]</InArgument>
-                                              </Assign.Value>
-                                              <sap:WorkflowViewStateService.ViewState>
-                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-                                                </scg:Dictionary>
-                                              </sap:WorkflowViewStateService.ViewState>
-                                            </Assign>
-                                          </Sequence>
-                                        </If.Else>
-                                      </If>
-                                    </Sequence>
-                                  </TryCatch.Try>
-                                  <TryCatch.Catches>
-                                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="440,152" sap2010:WorkflowViewState.IdRef="Catch`1_20">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                      <ActivityAction x:TypeArguments="s:Exception">
-                                        <ActivityAction.Argument>
-                                          <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                                        </ActivityAction.Argument>
-                                        <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_50">
-                                          <Assign.To>
-                                            <OutArgument x:TypeArguments="x:Object">[CurrentRow(2)]</OutArgument>
-                                          </Assign.To>
-                                          <Assign.Value>
-                                            <InArgument x:TypeArguments="x:Object">[""]</InArgument>
-                                          </Assign.Value>
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                        </Assign>
-                                      </ActivityAction>
-                                    </Catch>
-                                  </TryCatch.Catches>
-                                </TryCatch>
-                                <TryCatch DisplayName="Try Catch Year and Kilometers" sap:VirtualizedContainerService.HintSize="508,534" sap2010:WorkflowViewState.IdRef="TryCatch_29">
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                  <TryCatch.Try>
-                                    <Sequence DisplayName="Sequence Extract Year and Km, insert to URL_List" sap:VirtualizedContainerService.HintSize="468,990" sap2010:WorkflowViewState.IdRef="Sequence_62">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                      <uix:NGetText ContinueOnError="True" DisplayName="Get Text Characteristics List" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="NGetText_23" ScopeIdentifier="df81c493-a083-42b8-a981-282060bd1b52" TextString="[All_caracteristici]" Version="V4">
-                                        <uix:NGetText.Target>
-                                          <uix:TargetAnchorable BrowserURL="https://www.olx.ro/d/oferta/audi-a6-c7-matix-s-line-30l-282-cai-IDisK8G.html" DesignTimeRectangle="235, 401, 938, 258" DesignTimeScaleFactor="1.25" ElementType="List" FuzzySelectorArgument="&lt;webctrl tag='UL' type='' class='css-rn93um' aaname='' /&gt;" Guid="0018525e-b7e8-4f84-b460-b541dc647a09" InformativeScreenshot="65da3236798210893c11eba2d00fee62.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='AUDI A6 C7 MATIX S LINE 30l 282 cai Beius • OLX.ro' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
-                                        </uix:NGetText.Target>
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                      </uix:NGetText>
-                                      <uast:ExtractText FirstMatch="{x:Null}" Results="{x:Null}" DisplayName="Extract Year" EndingText="Numar de usi:" ExtractBaseURLOnly="False" ExtractOptions="BetweenStrings" sap:VirtualizedContainerService.HintSize="434,327" sap2010:WorkflowViewState.IdRef="ExtractText_1" IgnoreDuplicates="False" MatchCase="False" Result="[year]" Source="[All_caracteristici]" StartingText="An de fabricatie: ">
+                                      <uast:ExtractText FirstMatch="{x:Null}" Results="{x:Null}" DisplayName="Extract Year" EndingText="Stare:" ExtractBaseURLOnly="False" ExtractOptions="BetweenStrings" sap:VirtualizedContainerService.HintSize="382.4,322.4" sap2010:WorkflowViewState.IdRef="ExtractText_3" IgnoreDuplicates="False" MatchCase="False" Result="[year]" Source="[All_caracteristici]" StartingText="An de fabricatie: ">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -414,21 +434,40 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </uast:ExtractText>
-                                      <Assign DisplayName="Assign Year" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_63">
-                                        <Assign.To>
-                                          <OutArgument x:TypeArguments="x:Object">[CurrentRow(3)]</OutArgument>
-                                        </Assign.To>
-                                        <Assign.Value>
-                                          <InArgument x:TypeArguments="x:Object">[year.Replace(" ", "").Trim]</InArgument>
-                                        </Assign.Value>
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                      </Assign>
-                                      <uast:ExtractText FirstMatch="{x:Null}" Results="{x:Null}" DisplayName="Extract Kilometers" EndingText="Culoare: " ExtractBaseURLOnly="False" ExtractOptions="BetweenStrings" sap:VirtualizedContainerService.HintSize="434,327" sap2010:WorkflowViewState.IdRef="ExtractText_2" IgnoreDuplicates="False" MatchCase="False" Result="[km]" Source="[All_caracteristici]" StartingText="Rulaj: ">
+                                    </Sequence>
+                                  </If.Else>
+                                </If>
+                                <Assign DisplayName="Assign Year" sap:VirtualizedContainerService.HintSize="449.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_63">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:Object">[CurrentRow(3)]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:Object">[year.Replace(" ", "").Trim]</InArgument>
+                                  </Assign.Value>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Assign>
+                                <uast:ExtractText FirstMatch="{x:Null}" Results="{x:Null}" DisplayName="Extract Kilometers" EndingText="Culoare: " ExtractBaseURLOnly="False" ExtractOptions="BetweenStrings" sap:VirtualizedContainerService.HintSize="449.6,331.2" sap2010:WorkflowViewState.IdRef="ExtractText_2" IgnoreDuplicates="False" MatchCase="False" Result="[km]" Source="[All_caracteristici]" StartingText="Rulaj: ">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </uast:ExtractText>
+                                <If Condition="[String.IsNullOrEmpty(km)]" sap:VirtualizedContainerService.HintSize="449.6,642.4" sap2010:WorkflowViewState.IdRef="If_19">
+                                  <If.Then>
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,382.4" sap2010:WorkflowViewState.IdRef="Sequence_75">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <uast:ExtractText FirstMatch="{x:Null}" Results="{x:Null}" DisplayName="Extract Kilometers" EndingText="An de fabricatie: " ExtractBaseURLOnly="False" ExtractOptions="BetweenStrings" sap:VirtualizedContainerService.HintSize="382.4,322.4" sap2010:WorkflowViewState.IdRef="ExtractText_4" IgnoreDuplicates="False" MatchCase="False" Result="[km]" Source="[All_caracteristici]" StartingText="Rulaj: ">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -436,176 +475,205 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                       </uast:ExtractText>
-                                      <Assign DisplayName="Assign Kilometers to km" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_62">
-                                        <Assign.To>
-                                          <OutArgument x:TypeArguments="x:Object">[CurrentRow(4)]</OutArgument>
-                                        </Assign.To>
-                                        <Assign.Value>
-                                          <InArgument x:TypeArguments="x:Object">[km.Replace("km", "").Replace("KM", "").Replace("Km", "").Replace(" ", "").Trim]</InArgument>
-                                        </Assign.Value>
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                      </Assign>
                                     </Sequence>
-                                  </TryCatch.Try>
-                                  <TryCatch.Catches>
-                                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="474,349" sap2010:WorkflowViewState.IdRef="Catch`1_21">
+                                  </If.Then>
+                                  <If.Else>
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89.6" sap2010:WorkflowViewState.IdRef="Sequence_76">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ActivityAction x:TypeArguments="s:Exception">
-                                        <ActivityAction.Argument>
-                                          <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                                        </ActivityAction.Argument>
-                                        <Sequence DisplayName="Sequence assign empty to CurrentRow 3 and 4" sap:VirtualizedContainerService.HintSize="468,279" sap2010:WorkflowViewState.IdRef="Sequence_70">
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                          <Assign DisplayName="Assign year to CurrentRow3" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_58">
-                                            <Assign.To>
-                                              <OutArgument x:TypeArguments="x:Object">[CurrentRow(3)]</OutArgument>
-                                            </Assign.To>
-                                            <Assign.Value>
-                                              <InArgument x:TypeArguments="x:Object">[""]</InArgument>
-                                            </Assign.Value>
-                                            <sap:WorkflowViewStateService.ViewState>
-                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                              </scg:Dictionary>
-                                            </sap:WorkflowViewStateService.ViewState>
-                                          </Assign>
-                                          <Assign DisplayName="Assign year to CurrentRow4" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_59">
-                                            <Assign.To>
-                                              <OutArgument x:TypeArguments="x:Object">[CurrentRow(4)]</OutArgument>
-                                            </Assign.To>
-                                            <Assign.Value>
-                                              <InArgument x:TypeArguments="x:Object">[""]</InArgument>
-                                            </Assign.Value>
-                                            <sap:WorkflowViewStateService.ViewState>
-                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                              </scg:Dictionary>
-                                            </sap:WorkflowViewStateService.ViewState>
-                                          </Assign>
-                                        </Sequence>
-                                      </ActivityAction>
-                                    </Catch>
-                                  </TryCatch.Catches>
-                                </TryCatch>
+                                    </Sequence>
+                                  </If.Else>
+                                </If>
+                                <Assign DisplayName="Assign Kilometers to km" sap:VirtualizedContainerService.HintSize="449.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_62">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:Object">[CurrentRow(4)]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:Object">[km.Replace("km", "").Replace("KM", "").Replace("Km", "").Replace(" ", "").Trim]</InArgument>
+                                  </Assign.Value>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                </Assign>
                               </Sequence>
-                            </If.Then>
-                            <If.Else>
-                              <Sequence DisplayName="Else Autovit" sap:VirtualizedContainerService.HintSize="508,1774" sap2010:WorkflowViewState.IdRef="Sequence_59">
+                            </TryCatch.Try>
+                            <TryCatch.Catches>
+                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="486.4,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_21">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ActivityAction x:TypeArguments="s:Exception">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                  </ActivityAction.Argument>
+                                  <Sequence DisplayName="Sequence assign empty to CurrentRow 3 and 4" sap:VirtualizedContainerService.HintSize="467.2,278.4" sap2010:WorkflowViewState.IdRef="Sequence_70">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Assign DisplayName="Assign year to CurrentRow3" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_58">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:Object">[CurrentRow(3)]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:Object">[""]</InArgument>
+                                      </Assign.Value>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </Assign>
+                                    <Assign DisplayName="Assign year to CurrentRow4" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_59">
+                                      <Assign.To>
+                                        <OutArgument x:TypeArguments="x:Object">[CurrentRow(4)]</OutArgument>
+                                      </Assign.To>
+                                      <Assign.Value>
+                                        <InArgument x:TypeArguments="x:Object">[""]</InArgument>
+                                      </Assign.Value>
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </Assign>
+                                  </Sequence>
+                                </ActivityAction>
+                              </Catch>
+                            </TryCatch.Catches>
+                          </TryCatch>
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence DisplayName="Else Autovit" sap:VirtualizedContainerService.HintSize="672,3911.2" sap2010:WorkflowViewState.IdRef="Sequence_59">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="474,114" sap2010:WorkflowViewState.IdRef="NGoToUrl_8" Url="[CurrentRow.ItemArray(0).ToString]" Version="V4" />
+                          <TryCatch DisplayName="Try Catch Name" sap:VirtualizedContainerService.HintSize="638.4,348" sap2010:WorkflowViewState.IdRef="TryCatch_30">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <TryCatch.Try>
+                              <Sequence DisplayName="Sequence get name and assign to CurrentRow1" sap:VirtualizedContainerService.HintSize="467.2,352.8" sap2010:WorkflowViewState.IdRef="Sequence_63">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="474,114" sap2010:WorkflowViewState.IdRef="NGoToUrl_8" Url="[CurrentRow.ItemArray(0).ToString]" Version="V4" />
-                                <TryCatch DisplayName="Try Catch Name" sap:VirtualizedContainerService.HintSize="474,346" sap2010:WorkflowViewState.IdRef="TryCatch_30">
+                                <uix:NGetText DisplayName="Get Text 'Audi A6 Avant 3.0 TDI q…'" sap:VirtualizedContainerService.HintSize="433.6,189.6" sap2010:WorkflowViewState.IdRef="NGetText_24" ScopeIdentifier="df81c493-a083-42b8-a981-282060bd1b52" TextString="[name]" Version="V4">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://www.autovit.ro/autoturisme/anunt/audi-a6-ver-avant-3-0-tdi-quattro-stronic-ID7HrCYT.html" DesignTimeRectangle="1284, 471, 450, 65" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='offer-title big-text e12csvfg2 ooa-1dueukt er34gjf0' /&gt;" Guid="a3f513a7-431a-4e60-b35b-88781c89025b" InformativeScreenshot="fa6d8aca551b3ecf6dc826bfe578a80b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Utilizat Audi A6 2013 - 11 990 EUR, 29 500 km - Autovit.ro' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                                  </uix:NGetText.Target>
+                                </uix:NGetText>
+                                <Assign DisplayName="Assign name" sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_46">
+                                  <Assign.To>
+                                    <OutArgument x:TypeArguments="x:Object">[CurrentRow(1)]</OutArgument>
+                                  </Assign.To>
+                                  <Assign.Value>
+                                    <InArgument x:TypeArguments="x:Object">[name.Trim]</InArgument>
+                                  </Assign.Value>
                                   <sap:WorkflowViewStateService.ViewState>
                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <TryCatch.Try>
-                                    <Sequence DisplayName="Sequence get name and assign to CurrentRow1" sap:VirtualizedContainerService.HintSize="468,354" sap2010:WorkflowViewState.IdRef="Sequence_63">
+                                </Assign>
+                              </Sequence>
+                            </TryCatch.Try>
+                            <TryCatch.Catches>
+                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="440,152" sap2010:WorkflowViewState.IdRef="Catch`1_22">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ActivityAction x:TypeArguments="s:Exception">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                  </ActivityAction.Argument>
+                                  <Assign DisplayName="Assign name" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_51">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Object">[CurrentRow(1)]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Object">[""]</InArgument>
+                                    </Assign.Value>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </Assign>
+                                </ActivityAction>
+                              </Catch>
+                            </TryCatch.Catches>
+                          </TryCatch>
+                          <TryCatch DisplayName="Try Catch Price" sap:VirtualizedContainerService.HintSize="638.4,1315.2" sap2010:WorkflowViewState.IdRef="TryCatch_31">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <TryCatch.Try>
+                              <Sequence sap:VirtualizedContainerService.HintSize="601.6,1052" sap2010:WorkflowViewState.IdRef="Sequence_64">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'EUR'" sap:VirtualizedContainerService.HintSize="568,189.6" sap2010:WorkflowViewState.IdRef="NGetText_25" ScopeIdentifier="df81c493-a083-42b8-a981-282060bd1b52" TextString="[price]" Version="V4">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://www.autovit.ro/autoturisme/anunt/audi-a6-ver-avant-3-0-tdi-quattro-stronic-ID7HrCYT.html" CVScreenId="9696be2c-4be8-4730-bce9-6a34f0c6aad4" CvTextArea="1282, 290, 111, 32" CvType="AnyWordGroup" DesignTimeRectangle="1284, 283, 110, 43" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl isleaf='1' parentid='__next' tag='H3' type='' class='offer-price__number evnmei44 ooa-1kdys7g er34gjf0' /&gt;" Guid="aaad108c-f526-4e73-89cc-24b7b0526665" InformativeScreenshot="06e9cf0a628fa19411e78bb0bc72c525.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Utilizat Audi A6 2013 - 11 990 EUR, 29 500 km - Autovit.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CVScreenId="9696be2c-4be8-4730-bce9-6a34f0c6aad4" CvTextArea="1397, 306, 37, 17" CvTextArgument="EUR" CvType="Text" DesignTimeRectangle="1399, 301, 35, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' parentid='__next' tag='P' class='offer-price__currency evnmei45 ooa-m6bn4u er34gjf0' aaname='EUR' check:innerText='EUR' /&gt;" Guid="24e23458-a24b-4483-8b03-b110b27aca47" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NGetText.Target>
+                                </uix:NGetText>
+                                <If Condition="[String.IsNullOrEmpty(price) or String.IsNullOrWhiteSpace(price)]" sap:VirtualizedContainerService.HintSize="568,802.4" sap2010:WorkflowViewState.IdRef="If_20">
+                                  <If.Then>
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,89.6" sap2010:WorkflowViewState.IdRef="Sequence_77">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <uix:NGetText DisplayName="Get Text 'Audi A6 Avant 3.0 TDI q…'" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NGetText_24" ScopeIdentifier="df81c493-a083-42b8-a981-282060bd1b52" TextString="[name]" Version="V4">
-                                        <uix:NGetText.Target>
-                                          <uix:TargetAnchorable BrowserURL="https://www.autovit.ro/autoturisme/anunt/audi-a6-ver-avant-3-0-tdi-quattro-stronic-ID7HrCYT.html" DesignTimeRectangle="1284, 471, 450, 65" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='offer-title big-text e12csvfg2 ooa-1dueukt er34gjf0' /&gt;" Guid="a3f513a7-431a-4e60-b35b-88781c89025b" InformativeScreenshot="fa6d8aca551b3ecf6dc826bfe578a80b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Utilizat Audi A6 2013 - 11 990 EUR, 29 500 km - Autovit.ro' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
-                                        </uix:NGetText.Target>
-                                      </uix:NGetText>
-                                      <Assign DisplayName="Assign name" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_46">
-                                        <Assign.To>
-                                          <OutArgument x:TypeArguments="x:Object">[CurrentRow(1)]</OutArgument>
-                                        </Assign.To>
-                                        <Assign.Value>
-                                          <InArgument x:TypeArguments="x:Object">[name.Trim]</InArgument>
-                                        </Assign.Value>
-                                        <sap:WorkflowViewStateService.ViewState>
-                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                          </scg:Dictionary>
-                                        </sap:WorkflowViewStateService.ViewState>
-                                      </Assign>
                                     </Sequence>
-                                  </TryCatch.Try>
-                                  <TryCatch.Catches>
-                                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="440,152" sap2010:WorkflowViewState.IdRef="Catch`1_22">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                      <ActivityAction x:TypeArguments="s:Exception">
-                                        <ActivityAction.Argument>
-                                          <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                                        </ActivityAction.Argument>
-                                        <Assign DisplayName="Assign name" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_51">
-                                          <Assign.To>
-                                            <OutArgument x:TypeArguments="x:Object">[CurrentRow(1)]</OutArgument>
-                                          </Assign.To>
-                                          <Assign.Value>
-                                            <InArgument x:TypeArguments="x:Object">[""]</InArgument>
-                                          </Assign.Value>
-                                          <sap:WorkflowViewStateService.ViewState>
-                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                            </scg:Dictionary>
-                                          </sap:WorkflowViewStateService.ViewState>
-                                        </Assign>
-                                      </ActivityAction>
-                                    </Catch>
-                                  </TryCatch.Catches>
-                                </TryCatch>
-                                <TryCatch DisplayName="Try Catch Price" sap:VirtualizedContainerService.HintSize="474,346" sap2010:WorkflowViewState.IdRef="TryCatch_31">
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                  <TryCatch.Try>
-                                    <Sequence sap:VirtualizedContainerService.HintSize="536,740" sap2010:WorkflowViewState.IdRef="Sequence_64">
+                                  </If.Then>
+                                  <If.Else>
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="534.4,551.2" sap2010:WorkflowViewState.IdRef="Sequence_78">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <uix:NGetText DisplayName="Get Text 'EUR'" sap:VirtualizedContainerService.HintSize="502,189" sap2010:WorkflowViewState.IdRef="NGetText_25" ScopeIdentifier="df81c493-a083-42b8-a981-282060bd1b52" TextString="[price]" Version="V4">
-                                        <uix:NGetText.Target>
-                                          <uix:TargetAnchorable BrowserURL="https://www.autovit.ro/autoturisme/anunt/audi-a6-ver-avant-3-0-tdi-quattro-stronic-ID7HrCYT.html" CVScreenId="9696be2c-4be8-4730-bce9-6a34f0c6aad4" CvTextArea="1282, 290, 111, 32" CvType="AnyWordGroup" DesignTimeRectangle="1284, 283, 110, 43" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl isleaf='1' parentid='__next' tag='H3' type='' class='offer-price__number evnmei44 ooa-1kdys7g er34gjf0' /&gt;" Guid="aaad108c-f526-4e73-89cc-24b7b0526665" InformativeScreenshot="06e9cf0a628fa19411e78bb0bc72c525.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Utilizat Audi A6 2013 - 11 990 EUR, 29 500 km - Autovit.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
-                                            <uix:TargetAnchorable.Anchors>
-                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                <uix:Target CVScreenId="9696be2c-4be8-4730-bce9-6a34f0c6aad4" CvTextArea="1397, 306, 37, 17" CvTextArgument="EUR" CvType="Text" DesignTimeRectangle="1399, 301, 35, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' parentid='__next' tag='P' class='offer-price__currency evnmei45 ooa-m6bn4u er34gjf0' aaname='EUR' check:innerText='EUR' /&gt;" Guid="24e23458-a24b-4483-8b03-b110b27aca47" SearchSteps="FuzzySelector, CV" />
-                                              </scg:List>
-                                            </uix:TargetAnchorable.Anchors>
-                                          </uix:TargetAnchorable>
-                                        </uix:NGetText.Target>
-                                      </uix:NGetText>
-                                      <If Condition="[price.Contains(&quot;EUR&quot;)]" DisplayName="If Price is in &quot;EUR&quot; or &quot;Lei&quot;" sap:VirtualizedContainerService.HintSize="502,491" sap2010:WorkflowViewState.IdRef="If_17">
+                                      <If Condition="[price.Contains(&quot;EUR&quot;)]" DisplayName="If Price is in &quot;EUR&quot; or &quot;Lei&quot;" sap:VirtualizedContainerService.HintSize="500.8,491.2" sap2010:WorkflowViewState.IdRef="If_17">
                                         <sap:WorkflowViewStateService.ViewState>
                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -613,13 +681,13 @@
                                           </scg:Dictionary>
                                         </sap:WorkflowViewStateService.ViewState>
                                         <If.Then>
-                                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_71">
+                                          <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="467.2,164.8" sap2010:WorkflowViewState.IdRef="Sequence_71">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <Assign DisplayName="Assign Price" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_60">
+                                            <Assign DisplayName="Assign Price" sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_60">
                                               <Assign.To>
                                                 <OutArgument x:TypeArguments="x:Object">[CurrentRow(2)]</OutArgument>
                                               </Assign.To>
@@ -630,13 +698,13 @@
                                           </Sequence>
                                         </If.Then>
                                         <If.Else>
-                                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_72">
+                                          <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="467.2,164.8" sap2010:WorkflowViewState.IdRef="Sequence_72">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <Assign DisplayName="Assign Price" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_61">
+                                            <Assign DisplayName="Assign Price" sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_61">
                                               <Assign.To>
                                                 <OutArgument x:TypeArguments="x:Object">[CurrentRow(2)]</OutArgument>
                                               </Assign.To>
@@ -648,58 +716,78 @@
                                         </If.Else>
                                       </If>
                                     </Sequence>
-                                  </TryCatch.Try>
-                                  <TryCatch.Catches>
-                                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="440,152" sap2010:WorkflowViewState.IdRef="Catch`1_23">
+                                  </If.Else>
+                                </If>
+                              </Sequence>
+                            </TryCatch.Try>
+                            <TryCatch.Catches>
+                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="604.8,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_23">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ActivityAction x:TypeArguments="s:Exception">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                  </ActivityAction.Argument>
+                                  <Assign sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_52">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Object">[CurrentRow(2)]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Object">[""]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                </ActivityAction>
+                              </Catch>
+                            </TryCatch.Catches>
+                          </TryCatch>
+                          <TryCatch DisplayName="Try Catch Year" sap:VirtualizedContainerService.HintSize="638.4,928.8" sap2010:WorkflowViewState.IdRef="TryCatch_32">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <TryCatch.Try>
+                              <Sequence sap:VirtualizedContainerService.HintSize="534.4,665.6" sap2010:WorkflowViewState.IdRef="Sequence_65">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'Anul producției'" sap:VirtualizedContainerService.HintSize="500.8,189.6" sap2010:WorkflowViewState.IdRef="NGetText_26" ScopeIdentifier="df81c493-a083-42b8-a981-282060bd1b52" TextString="[year]" Version="V4">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://www.autovit.ro/autoturisme/anunt/audi-a6-ver-avant-3-0-tdi-quattro-stronic-ID7HrCYT.html" CVScreenId="cb206546-e516-4a4e-8933-e263db7e23e9" CvTextArea="711, 581, 45, 17" CvType="AnyWordGroup" DesignTimeRectangle="714, 576, 530, 25" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='eizxi838 ooa-17xeqrd er34gjf0' parentid='__next' tag='P' /&gt;" Guid="0ea13608-a52c-4f76-a171-608b44052441" InformativeScreenshot="d5b62326664846ccd209f8dc73582026.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Utilizat Audi A6 2013 - 11 990 EUR, 29 500 km - Autovit.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                      <uix:TargetAnchorable.Anchors>
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                          <uix:Target CVScreenId="cb206546-e516-4a4e-8933-e263db7e23e9" CvTextArea="181, 580, 137, 23" CvTextArgument="Anul producției" CvType="Text" DesignTimeRectangle="184, 576, 530, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='eizxi837 ooa-y26jp er34gjf0' parentid='__next' tag='P' aaname='Anul producției' check:innerText='Anul producției' /&gt;" Guid="3c102015-600a-416f-a98f-2a004b9f3b13" SearchSteps="FuzzySelector, CV" />
+                                        </scg:List>
+                                      </uix:TargetAnchorable.Anchors>
+                                    </uix:TargetAnchorable>
+                                  </uix:NGetText.Target>
+                                </uix:NGetText>
+                                <If Condition="[String.IsNullOrEmpty(year)]" sap:VirtualizedContainerService.HintSize="500.8,416" sap2010:WorkflowViewState.IdRef="If_21">
+                                  <If.Then>
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,89.6" sap2010:WorkflowViewState.IdRef="Sequence_79">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <ActivityAction x:TypeArguments="s:Exception">
-                                        <ActivityAction.Argument>
-                                          <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                                        </ActivityAction.Argument>
-                                        <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_52">
-                                          <Assign.To>
-                                            <OutArgument x:TypeArguments="x:Object">[CurrentRow(2)]</OutArgument>
-                                          </Assign.To>
-                                          <Assign.Value>
-                                            <InArgument x:TypeArguments="x:Object">[""]</InArgument>
-                                          </Assign.Value>
-                                        </Assign>
-                                      </ActivityAction>
-                                    </Catch>
-                                  </TryCatch.Catches>
-                                </TryCatch>
-                                <TryCatch DisplayName="Try Catch Year" sap:VirtualizedContainerService.HintSize="474,346" sap2010:WorkflowViewState.IdRef="TryCatch_32">
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                  <TryCatch.Try>
-                                    <Sequence sap:VirtualizedContainerService.HintSize="468,354" sap2010:WorkflowViewState.IdRef="Sequence_65">
+                                    </Sequence>
+                                  </If.Then>
+                                  <If.Else>
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="467.2,164.8" sap2010:WorkflowViewState.IdRef="Sequence_80">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <uix:NGetText DisplayName="Get Text 'Anul producției'" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NGetText_26" ScopeIdentifier="df81c493-a083-42b8-a981-282060bd1b52" TextString="[year]" Version="V4">
-                                        <uix:NGetText.Target>
-                                          <uix:TargetAnchorable BrowserURL="https://www.autovit.ro/autoturisme/anunt/audi-a6-ver-avant-3-0-tdi-quattro-stronic-ID7HrCYT.html" CVScreenId="cb206546-e516-4a4e-8933-e263db7e23e9" CvTextArea="711, 581, 45, 17" CvType="AnyWordGroup" DesignTimeRectangle="714, 576, 530, 25" DesignTimeScaleFactor="1.25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='eizxi838 ooa-17xeqrd er34gjf0' parentid='__next' tag='P' /&gt;" Guid="0ea13608-a52c-4f76-a171-608b44052441" InformativeScreenshot="d5b62326664846ccd209f8dc73582026.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Utilizat Audi A6 2013 - 11 990 EUR, 29 500 km - Autovit.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
-                                            <uix:TargetAnchorable.Anchors>
-                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                                <uix:Target CVScreenId="cb206546-e516-4a4e-8933-e263db7e23e9" CvTextArea="181, 580, 137, 23" CvTextArgument="Anul producției" CvType="Text" DesignTimeRectangle="184, 576, 530, 25" ElementType="Text" FuzzySelectorArgument="&lt;webctrl type='' class='eizxi837 ooa-y26jp er34gjf0' parentid='__next' tag='P' aaname='Anul producției' check:innerText='Anul producției' /&gt;" Guid="3c102015-600a-416f-a98f-2a004b9f3b13" SearchSteps="FuzzySelector, CV" />
-                                              </scg:List>
-                                            </uix:TargetAnchorable.Anchors>
-                                          </uix:TargetAnchorable>
-                                        </uix:NGetText.Target>
-                                      </uix:NGetText>
-                                      <Assign DisplayName="Assign Year" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_47">
+                                      <Assign DisplayName="Assign Year" sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_47">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="x:Object">[CurrentRow(3)]</OutArgument>
                                         </Assign.To>
@@ -708,85 +796,105 @@
                                         </Assign.Value>
                                       </Assign>
                                     </Sequence>
-                                  </TryCatch.Try>
-                                  <TryCatch.Catches>
-                                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="440,152" sap2010:WorkflowViewState.IdRef="Catch`1_24">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                      <ActivityAction x:TypeArguments="s:Exception">
-                                        <ActivityAction.Argument>
-                                          <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                                        </ActivityAction.Argument>
-                                        <Assign DisplayName="Assign Year" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_53">
-                                          <Assign.To>
-                                            <OutArgument x:TypeArguments="x:Object">[CurrentRow(3)]</OutArgument>
-                                          </Assign.To>
-                                          <Assign.Value>
-                                            <InArgument x:TypeArguments="x:Object">[""]</InArgument>
-                                          </Assign.Value>
-                                        </Assign>
-                                      </ActivityAction>
-                                    </Catch>
-                                  </TryCatch.Catches>
-                                </TryCatch>
-                                <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Stare și istoric'" sap:VirtualizedContainerService.HintSize="474,225" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="df81c493-a083-42b8-a981-282060bd1b52" Version="V4">
-                                  <uix:NClick.Target>
-                                    <uix:TargetAnchorable BrowserURL="https://www.autovit.ro/autoturisme/anunt/audi-a6-ver-avant-3-0-tdi-quattro-stronic-ID7HrCYT.html" CVScreenId="b9613e95-d335-4f70-8293-c3ab07322d59" CvElementArea="1206, 701, 43, 38" CvType="ArrowButton" DesignTimeRectangle="1214, 705, 30, 30" DesignTimeScaleFactor="1.25" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl type='' parentid='content-condition-history-section__toggle' tag='svg' class='ooa-51p4fw' aaname='' /&gt;" Guid="3f0b04a4-8ff2-4a96-ba18-4d8b34c5acfc" InformativeScreenshot="f964e7c04174d2744ae13b5a8d99d2e8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Utilizat Audi A6 2013 - 11 990 EUR, 29 500 km - Autovit.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                  </If.Else>
+                                </If>
+                              </Sequence>
+                            </TryCatch.Try>
+                            <TryCatch.Catches>
+                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="537.6,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_24">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ActivityAction x:TypeArguments="s:Exception">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                  </ActivityAction.Argument>
+                                  <Assign DisplayName="Assign Year" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_53">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Object">[CurrentRow(3)]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Object">[""]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                </ActivityAction>
+                              </Catch>
+                            </TryCatch.Catches>
+                          </TryCatch>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" ContinueOnError="True" DisplayName="Click 'Stare și istoric'" sap:VirtualizedContainerService.HintSize="638.4,225.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="df81c493-a083-42b8-a981-282060bd1b52" Version="V4">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://www.autovit.ro/autoturisme/anunt/audi-a6-ver-avant-3-0-tdi-quattro-stronic-ID7HrCYT.html" CVScreenId="b9613e95-d335-4f70-8293-c3ab07322d59" CvElementArea="1206, 701, 43, 38" CvType="ArrowButton" DesignTimeRectangle="1214, 705, 30, 30" DesignTimeScaleFactor="1.25" ElementType="Icon" FuzzySelectorArgument="&lt;webctrl type='' parentid='content-condition-history-section__toggle' tag='svg' class='ooa-51p4fw' aaname='' /&gt;" Guid="3f0b04a4-8ff2-4a96-ba18-4d8b34c5acfc" InformativeScreenshot="f964e7c04174d2744ae13b5a8d99d2e8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Utilizat Audi A6 2013 - 11 990 EUR, 29 500 km - Autovit.ro' /&gt;" SearchSteps="FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CVScreenId="b9613e95-d335-4f70-8293-c3ab07322d59" CvTextArea="232, 710, 144, 21" CvTextArgument="Stare și istoric" CvType="Text" DesignTimeRectangle="234, 705, 141, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='content-condition-history-section__toggle' tag='P' type='' class='eizxi839 ooa-mbq01s er34gjf0' aaname='Stare și istoric' check:innerText='Stare și istoric' /&gt;" Guid="f322cdce-50eb-4314-8f01-33cbebdfdf84" SearchSteps="FuzzySelector, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                            <uix:NClick.VerifyOptions>
+                              <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                                <uix:VerifyExecutionOptions.Retry>
+                                  <InArgument x:TypeArguments="x:Boolean" />
+                                </uix:VerifyExecutionOptions.Retry>
+                                <uix:VerifyExecutionOptions.Timeout>
+                                  <InArgument x:TypeArguments="x:Double" />
+                                </uix:VerifyExecutionOptions.Timeout>
+                              </uix:VerifyExecutionOptions>
+                            </uix:NClick.VerifyOptions>
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                          </uix:NClick>
+                          <TryCatch DisplayName="Try Catch Kilometers" sap:VirtualizedContainerService.HintSize="638.4,920" sap2010:WorkflowViewState.IdRef="TryCatch_33">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <TryCatch.Try>
+                              <Sequence sap:VirtualizedContainerService.HintSize="534.4,665.6" sap2010:WorkflowViewState.IdRef="Sequence_66">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <uix:NGetText ContinueOnError="True" DisplayName="Get Text 'Km'" sap:VirtualizedContainerService.HintSize="500.8,189.6" sap2010:WorkflowViewState.IdRef="NGetText_27" ScopeIdentifier="df81c493-a083-42b8-a981-282060bd1b52" TextString="[km]" Version="V4">
+                                  <uix:NGetText.Target>
+                                    <uix:TargetAnchorable BrowserURL="https://www.olx.ro/auto-masini-moto-ambarcatiuni/autoturisme/" CVScreenId="fde3e7a4-b12a-418b-9f47-a15c0042d124" CvTextArea="762, 742, 84, 15" CvType="AnyWordGroup" DesignTimeRectangle="764, 740, 424, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='4' parentid='content-condition-history-section__collapse' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='content-condition-history-section__collapse' tag='P' class='eizxi838 ooa-17xeqrd er34gjf0' /&gt;" Guid="b1e45342-a54c-4a53-a896-d11b905c50d0" ImageBase64="" InformativeScreenshot="65c913c945a5f72ac702074f01dd62a4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Utilizat Audi A6 2012 - 9 890 EUR, 258 080 km - Autovit.ro' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
                                       <uix:TargetAnchorable.Anchors>
-                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
-                                          <uix:Target CVScreenId="b9613e95-d335-4f70-8293-c3ab07322d59" CvTextArea="232, 710, 144, 21" CvTextArgument="Stare și istoric" CvType="Text" DesignTimeRectangle="234, 705, 141, 30" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='content-condition-history-section__toggle' tag='P' type='' class='eizxi839 ooa-mbq01s er34gjf0' aaname='Stare și istoric' check:innerText='Stare și istoric' /&gt;" Guid="f322cdce-50eb-4314-8f01-33cbebdfdf84" SearchSteps="FuzzySelector, CV" />
+                                        <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
+                                          <uix:Target CVScreenId="fde3e7a4-b12a-418b-9f47-a15c0042d124" CvTextArea="339, 743, 23, 14" CvTextArgument="Km" CvType="Text" DesignTimeRectangle="340, 740, 424, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='3' parentid='content-condition-history-section__collapse' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='content-condition-history-section__collapse' tag='P' class='eizxi837 ooa-y26jp er34gjf0' aaname='Km' check:innerText='Km' /&gt;" Guid="5ba97634-bd8d-47dc-9551-def3d1d3078a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAawAAAAYCAYAAACm5Ml7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFLSURBVHhe7dxBTsJQFEBRgyPX58QV6IQ9dACugUQWAAuAhBUYR8AeSKi7eBZatQ0tDCSVn5wzIX1Jxzf/5Ze7AIAECBYASRAsAJIgWAAkQbAASIJgAZAEwQIgCbVgbWPyMozJpnqsrN+G8dwyB4C+vI8ezgdrvxgXsRrHMq8GANC33TxeZ59ngrWZihUAN6M9WPkqstY1YB7LbBjZYnv8PawKf9eF5fvNGQBcx2mwFl2xOiiDVT95lWvDttk01uUjAPzZSbCO8clWsa+mTd8nrPqesHyvbeaUBcC1tKwEq3C9bat5XXewmnESLACuq+PSRVe0BAuAf7CbdwWrUF28aMZJsADoWRGrx/sL32GVV9vrgRIsAPqVz55iMPq4EKzCzy3A43pQsADo1+FfLgbNExYA3C7BAiAJggVAEgQLgCQIFgBJECwAEhDxBYHXXPg6AIRjAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image, CV" />
+                                          <uix:Target CVScreenId="fde3e7a4-b12a-418b-9f47-a15c0042d124" CvTextArea="379, 634, 114, 16" CvTextArgument="Stare și istoric" CvType="Text" DesignTimeRectangle="380, 630, 113, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='content-condition-history-section__toggle' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='content-condition-history-section__toggle' tag='P' type='' class='eizxi839 ooa-mbq01s er34gjf0' aaname='Stare și istoric' check:innerText='Stare și istoric' /&gt;" Guid="11124a6c-ac2f-42f0-8657-1d47d7da49ba" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHUAAAAcCAYAAABf//AuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVjSURBVGhD7Vg9SyNdFH7ZrfwLYyNYiCwIaiOphBQSbAQLhRQKBhQS2C0CEd4gARGEIAZEVlgkxUIMLGQDgmsjaUQslpBKC8EUFhEsJmCRwuJ5z/2azEzmI+ZlQWfngVvkzrnnnnueez5u/kGIwCEkNYAISQ0gQlIDiJDUACIkNYAISQ0g/gpS9bsG7nX5ww0vj6g3HuWPt4G+7HaAjdQ2bn7uIjE3i9GPQ/jAxtgsFpNV3EuJd4dGAdPsHMO7qMupXrRxlhTnjf94I8T2ZbczTKQ2UVkbF0R+HEdkLoYojcgY+72LKymFpwZK+S+YX6+iJafeNB6qSNAZRte87O2gno9BG45h73dHzvlDb5Sxl1xA4k9chL7sdoZBaqeWg8YIncrhwhLyFL3fqt3bcr0riF8qvw9S/yCuttmFH8LiydtK2waprZNlQdbWtZxxQUiqgTdPKiOLR+rwKkpNOWfBI0pL4hDWoVIzq8cFpJa69Xg0soG9yzb/KqB0LNMebVxsL3DZHeMetXF1QKl9YoSv1yZiSORraL3Iz25o1XBIafDTsNhXm1jATk3u+1DGIrPH5xIqgrq2ENz0Kp32sW1aTGXqOLMsyxcN1ptkyrixZEEPf7jZrd+isr2BqPTRh+FJRP89h1mtqaY+WmrqfKaIK4s2cnixwGsIl5laRTZPv/PnooniRtC6ZI7maH6LNubOmMVegysgdA+xsy0zAw3hyCZKK8zQcTo801tAdp3qHH3XklajLXg6R4rv012Xjk8irqJnUFK99OrXOKbfqXmxZnpFnvlURkOzjDhfO4JP8U36liNZ6duxLzh7EmKe/nCyuynqLJPRJlaRZntmyM+2/sZEKgNF28mmJIMNOlD+2upQt/SrN3Fj89r9d2Ho9L5iVR1iBFo0hzOTvEj/M8hemhuVNl00Jh/D8Z2cskPZYysbui71DEqqn16Cc/pt4piTPUIXwJzyOiQ/y+Wn8/7+6LWbdegiOudpvVc7ZyNVggg6y692085Kufuk8aqprQYqFM3Z5DKi0UmRztkw0pI6xBASP61pubIiZV2G4Ww77oqYZzLUuSYOznFjRIHEoKT66SU4ktqqIs7WTRV6nyIUwdwW45ubPwh2u3XKHG56bXAmVYFSUHqKbTqCbE3eDRdSOzQfYfNUOxKUrg5PzlHZignZHlJZDZFTHGo+huyPGi5qvcPJqQr6ZQFxVWN4yjtCXaWXQUkleOolOJLqud81drgu1Ye4+YNg19PnORi8SSX0GO5IKqWcOSYXw+GtnCIYHbUTqQ9yikPNz5jq7+uh39Zw/FmkuNc6w4lUBUe9BE9SvSJ1rigzn5s/CG6kviZSW7+OUGrYUsAz3awI23QIqVP5TZG6aErJxg003zjV+NC8L6lAfX+Gy1pSPcNLE5Vfpptig95sWmv+Sw1ZbouMhgFJ9dVLMEj9bg4z/5oa6ekx+iDVrNeyXy+6pKqoovTJ/kliw6ipUbodqjKrzUh5dD1HHSqlJFbEPwsCtegG74rTS5OIRARR/ZBqvkBGZ7dFzxvW7Rnre8HsNuT5vqLL1DI10UwMSKqvXinDz8fq7lYOia+CrM7vgmw2e7tfLUqX4pmLEV5Dqihxqollz0Xf7rfzQCmGCUTUs4YMIoLSxd534v3ppnA2V85IJTw3cLgm36hjC0if3FIn3W/6laA3WMn+tkse4cKDjU6jaHsbLyN1YOrYByTVVy8HNZQZ8bZkL4XIgal2OLxxUwd2X76OVA7Su7dmCjj2lt+32uVbU0O8PwSH1A7VPHZ716q2aPr7EBxSqd5o/7N7DgoCQ2o9T01ZGKUcYU0NIEJSA4iQ1MAB+A8lBlNplYRHPwAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image, CV" />
                                         </scg:List>
                                       </uix:TargetAnchorable.Anchors>
                                     </uix:TargetAnchorable>
-                                  </uix:NClick.Target>
-                                  <uix:NClick.VerifyOptions>
-                                    <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
-                                      <uix:VerifyExecutionOptions.Retry>
-                                        <InArgument x:TypeArguments="x:Boolean" />
-                                      </uix:VerifyExecutionOptions.Retry>
-                                      <uix:VerifyExecutionOptions.Timeout>
-                                        <InArgument x:TypeArguments="x:Double" />
-                                      </uix:VerifyExecutionOptions.Timeout>
-                                    </uix:VerifyExecutionOptions>
-                                  </uix:NClick.VerifyOptions>
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                </uix:NClick>
-                                <TryCatch DisplayName="Try Catch Kilometers" sap:VirtualizedContainerService.HintSize="474,337" sap2010:WorkflowViewState.IdRef="TryCatch_33">
-                                  <sap:WorkflowViewStateService.ViewState>
-                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                    </scg:Dictionary>
-                                  </sap:WorkflowViewStateService.ViewState>
-                                  <TryCatch.Try>
-                                    <Sequence sap:VirtualizedContainerService.HintSize="468,354" sap2010:WorkflowViewState.IdRef="Sequence_66">
+                                  </uix:NGetText.Target>
+                                </uix:NGetText>
+                                <If Condition="[String.IsNullOrEmpty(km)]" sap:VirtualizedContainerService.HintSize="500.8,416" sap2010:WorkflowViewState.IdRef="If_22">
+                                  <If.Then>
+                                    <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="416,89.6" sap2010:WorkflowViewState.IdRef="Sequence_81">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
-                                      <uix:NGetText DisplayName="Get Text 'Km'" sap:VirtualizedContainerService.HintSize="434,189" sap2010:WorkflowViewState.IdRef="NGetText_27" ScopeIdentifier="df81c493-a083-42b8-a981-282060bd1b52" TextString="[km]" Version="V4">
-                                        <uix:NGetText.Target>
-                                          <uix:TargetAnchorable BrowserURL="https://www.olx.ro/auto-masini-moto-ambarcatiuni/autoturisme/" CVScreenId="fde3e7a4-b12a-418b-9f47-a15c0042d124" CvTextArea="762, 742, 84, 15" CvType="AnyWordGroup" DesignTimeRectangle="764, 740, 424, 20" DesignTimeScaleFactor="1" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='4' parentid='content-condition-history-section__collapse' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='content-condition-history-section__collapse' tag='P' class='eizxi838 ooa-17xeqrd er34gjf0' /&gt;" Guid="b1e45342-a54c-4a53-a896-d11b905c50d0" ImageBase64="" InformativeScreenshot="65c913c945a5f72ac702074f01dd62a4.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Utilizat Audi A6 2012 - 9 890 EUR, 258 080 km - Autovit.ro' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
-                                            <uix:TargetAnchorable.Anchors>
-                                              <scg:List x:TypeArguments="uix:ITarget" Capacity="2">
-                                                <uix:Target CVScreenId="fde3e7a4-b12a-418b-9f47-a15c0042d124" CvTextArea="339, 743, 23, 14" CvTextArgument="Km" CvType="Text" DesignTimeRectangle="340, 740, 424, 20" ElementType="Text" FullSelectorArgument="&lt;webctrl idx='3' parentid='content-condition-history-section__collapse' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='content-condition-history-section__collapse' tag='P' class='eizxi837 ooa-y26jp er34gjf0' aaname='Km' check:innerText='Km' /&gt;" Guid="5ba97634-bd8d-47dc-9551-def3d1d3078a" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAawAAAAYCAYAAACm5Ml7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFLSURBVHhe7dxBTsJQFEBRgyPX58QV6IQ9dACugUQWAAuAhBUYR8AeSKi7eBZatQ0tDCSVn5wzIX1Jxzf/5Ze7AIAECBYASRAsAJIgWAAkQbAASIJgAZAEwQIgCbVgbWPyMozJpnqsrN+G8dwyB4C+vI8ezgdrvxgXsRrHMq8GANC33TxeZ59ngrWZihUAN6M9WPkqstY1YB7LbBjZYnv8PawKf9eF5fvNGQBcx2mwFl2xOiiDVT95lWvDttk01uUjAPzZSbCO8clWsa+mTd8nrPqesHyvbeaUBcC1tKwEq3C9bat5XXewmnESLACuq+PSRVe0BAuAf7CbdwWrUF28aMZJsADoWRGrx/sL32GVV9vrgRIsAPqVz55iMPq4EKzCzy3A43pQsADo1+FfLgbNExYA3C7BAiAJggVAEgQLgCQIFgBJECwAEhDxBYHXXPg6AIRjAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image, CV" />
-                                                <uix:Target CVScreenId="fde3e7a4-b12a-418b-9f47-a15c0042d124" CvTextArea="379, 634, 114, 16" CvTextArgument="Stare și istoric" CvType="Text" DesignTimeRectangle="380, 630, 113, 24" ElementType="Text" FullSelectorArgument="&lt;webctrl parentid='content-condition-history-section__toggle' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='content-condition-history-section__toggle' tag='P' type='' class='eizxi839 ooa-mbq01s er34gjf0' aaname='Stare și istoric' check:innerText='Stare și istoric' /&gt;" Guid="11124a6c-ac2f-42f0-8657-1d47d7da49ba" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHUAAAAcCAYAAABf//AuAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVjSURBVGhD7Vg9SyNdFH7ZrfwLYyNYiCwIaiOphBQSbAQLhRQKBhQS2C0CEd4gARGEIAZEVlgkxUIMLGQDgmsjaUQslpBKC8EUFhEsJmCRwuJ5z/2azEzmI+ZlQWfngVvkzrnnnnueez5u/kGIwCEkNYAISQ0gQlIDiJDUACIkNYAISQ0g/gpS9bsG7nX5ww0vj6g3HuWPt4G+7HaAjdQ2bn7uIjE3i9GPQ/jAxtgsFpNV3EuJd4dGAdPsHMO7qMupXrRxlhTnjf94I8T2ZbczTKQ2UVkbF0R+HEdkLoYojcgY+72LKymFpwZK+S+YX6+iJafeNB6qSNAZRte87O2gno9BG45h73dHzvlDb5Sxl1xA4k9chL7sdoZBaqeWg8YIncrhwhLyFL3fqt3bcr0riF8qvw9S/yCuttmFH8LiydtK2waprZNlQdbWtZxxQUiqgTdPKiOLR+rwKkpNOWfBI0pL4hDWoVIzq8cFpJa69Xg0soG9yzb/KqB0LNMebVxsL3DZHeMetXF1QKl9YoSv1yZiSORraL3Iz25o1XBIafDTsNhXm1jATk3u+1DGIrPH5xIqgrq2ENz0Kp32sW1aTGXqOLMsyxcN1ptkyrixZEEPf7jZrd+isr2BqPTRh+FJRP89h1mtqaY+WmrqfKaIK4s2cnixwGsIl5laRTZPv/PnooniRtC6ZI7maH6LNubOmMVegysgdA+xsy0zAw3hyCZKK8zQcTo801tAdp3qHH3XklajLXg6R4rv012Xjk8irqJnUFK99OrXOKbfqXmxZnpFnvlURkOzjDhfO4JP8U36liNZ6duxLzh7EmKe/nCyuynqLJPRJlaRZntmyM+2/sZEKgNF28mmJIMNOlD+2upQt/SrN3Fj89r9d2Ho9L5iVR1iBFo0hzOTvEj/M8hemhuVNl00Jh/D8Z2cskPZYysbui71DEqqn16Cc/pt4piTPUIXwJzyOiQ/y+Wn8/7+6LWbdegiOudpvVc7ZyNVggg6y692085Kufuk8aqprQYqFM3Z5DKi0UmRztkw0pI6xBASP61pubIiZV2G4Ww77oqYZzLUuSYOznFjRIHEoKT66SU4ktqqIs7WTRV6nyIUwdwW45ubPwh2u3XKHG56bXAmVYFSUHqKbTqCbE3eDRdSOzQfYfNUOxKUrg5PzlHZignZHlJZDZFTHGo+huyPGi5qvcPJqQr6ZQFxVWN4yjtCXaWXQUkleOolOJLqud81drgu1Ye4+YNg19PnORi8SSX0GO5IKqWcOSYXw+GtnCIYHbUTqQ9yikPNz5jq7+uh39Zw/FmkuNc6w4lUBUe9BE9SvSJ1rigzn5s/CG6kviZSW7+OUGrYUsAz3awI23QIqVP5TZG6aErJxg003zjV+NC8L6lAfX+Gy1pSPcNLE5Vfpptig95sWmv+Sw1ZbouMhgFJ9dVLMEj9bg4z/5oa6ekx+iDVrNeyXy+6pKqoovTJ/kliw6ipUbodqjKrzUh5dD1HHSqlJFbEPwsCtegG74rTS5OIRARR/ZBqvkBGZ7dFzxvW7Rnre8HsNuT5vqLL1DI10UwMSKqvXinDz8fq7lYOia+CrM7vgmw2e7tfLUqX4pmLEV5Dqihxqollz0Xf7rfzQCmGCUTUs4YMIoLSxd534v3ppnA2V85IJTw3cLgm36hjC0if3FIn3W/6laA3WMn+tkse4cKDjU6jaHsbLyN1YOrYByTVVy8HNZQZ8bZkL4XIgal2OLxxUwd2X76OVA7Su7dmCjj2lt+32uVbU0O8PwSH1A7VPHZ716q2aPr7EBxSqd5o/7N7DgoCQ2o9T01ZGKUcYU0NIEJSA4iQ1MAB+A8lBlNplYRHPwAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image, CV" />
-                                              </scg:List>
-                                            </uix:TargetAnchorable.Anchors>
-                                          </uix:TargetAnchorable>
-                                        </uix:NGetText.Target>
-                                      </uix:NGetText>
-                                      <Assign DisplayName="Assign Kilometers to km" sap:VirtualizedContainerService.HintSize="434,105" sap2010:WorkflowViewState.IdRef="Assign_48">
+                                    </Sequence>
+                                  </If.Then>
+                                  <If.Else>
+                                    <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="467.2,164.8" sap2010:WorkflowViewState.IdRef="Sequence_82">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <Assign DisplayName="Assign Kilometers to km" sap:VirtualizedContainerService.HintSize="433.6,104.8" sap2010:WorkflowViewState.IdRef="Assign_48">
                                         <Assign.To>
                                           <OutArgument x:TypeArguments="x:Object">[CurrentRow(4)]</OutArgument>
                                         </Assign.To>
@@ -795,43 +903,34 @@
                                         </Assign.Value>
                                       </Assign>
                                     </Sequence>
-                                  </TryCatch.Try>
-                                  <TryCatch.Catches>
-                                    <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="440,152" sap2010:WorkflowViewState.IdRef="Catch`1_25">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                      <ActivityAction x:TypeArguments="s:Exception">
-                                        <ActivityAction.Argument>
-                                          <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
-                                        </ActivityAction.Argument>
-                                        <Assign DisplayName="Assign Kilometers to km" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_54">
-                                          <Assign.To>
-                                            <OutArgument x:TypeArguments="x:Object">[CurrentRow(4)]</OutArgument>
-                                          </Assign.To>
-                                          <Assign.Value>
-                                            <InArgument x:TypeArguments="x:Object">[""]</InArgument>
-                                          </Assign.Value>
-                                        </Assign>
-                                      </ActivityAction>
-                                    </Catch>
-                                  </TryCatch.Catches>
-                                </TryCatch>
+                                  </If.Else>
+                                </If>
                               </Sequence>
-                            </If.Else>
-                          </If>
-                        </Sequence>
-                      </If.Then>
-                      <If.Else>
-                        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_57">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
+                            </TryCatch.Try>
+                            <TryCatch.Catches>
+                              <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="537.6,23.2" sap2010:WorkflowViewState.IdRef="Catch`1_25">
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                                <ActivityAction x:TypeArguments="s:Exception">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                  </ActivityAction.Argument>
+                                  <Assign DisplayName="Assign Kilometers to km" sap:VirtualizedContainerService.HintSize="433.6,81.6" sap2010:WorkflowViewState.IdRef="Assign_54">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Object">[CurrentRow(4)]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Object">[""]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                </ActivityAction>
+                              </Catch>
+                            </TryCatch.Catches>
+                          </TryCatch>
                         </Sequence>
                       </If.Else>
                     </If>
